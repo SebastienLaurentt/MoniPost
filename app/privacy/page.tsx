@@ -76,7 +76,7 @@ const Privacy = () => {
             <h2>Contact Us</h2>
             <p>
               If you have any questions about this privacy policy, please
-              contact us at [contact email address].
+              contact us at mobipost@contact.com.
             </p>
           </div>
         </div>
