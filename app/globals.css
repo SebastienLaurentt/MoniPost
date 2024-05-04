@@ -62,4 +62,8 @@
     h1 {
       @apply text-3xl md:text-5xl lg:text-6xl font-bold leading-[46px] md:leading-[72px] lg:leading-[84px];
     }
+
+    h2 {
+      @apply text-2xl md:text-5xl lg:text-6xl font-bold leading-[46px] md:leading-[72px] lg:leading-[84px];
+    }
   }
