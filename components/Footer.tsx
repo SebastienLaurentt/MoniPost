@@ -14,10 +14,10 @@ const Footer = () => {
         <nav className="w-full md:w-fit">
           <ul className="flex flex-row w-full justify-between gap-x-4">
             <li>
-              <Link href="/">Privacy Policy</Link>
+              <Link href="/privacy">Privacy Policy</Link>
             </li>
             <li>
-              <Link href="/">Terms of Service</Link>
+              <Link href="/tes">Terms of Service</Link>
             </li>
           </ul>
         </nav>
