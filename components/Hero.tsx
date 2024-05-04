@@ -11,7 +11,7 @@ const Hero = () => {
         <h1>
           Moni<span className="text-primary">Post</span> helps world to <br />{" "}
           <span className="bg-primary text-secondary p-2 rounded-lg">
-            drive safe.
+            drive safer.
           </span>
         </h1>
         <p className="w-[340px] md:w-[540px] text-[14px] md:text-[16px]">
