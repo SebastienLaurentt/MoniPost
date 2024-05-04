@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <footer className="w-full">
       <div className="px-4 md:px-10 py-4 xl:px-16 flex flex-row justify-between">
-        <Link href="/" className="flex flex-row gap-x-2">
+        <Link href="/" className="flex flex-row gap-x-2 items-center">
           <Car />
-          <span>
-            Moni <span>Post</span>
+          <span className="font-bold">
+            Moni<span className="text-primary">Post</span>
           </span>
         </Link>
         <nav>
