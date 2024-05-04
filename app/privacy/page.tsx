@@ -1,7 +1,7 @@
 import PageTitle from "@/components/PageTitle";
 import Section from "@/components/Section";
 
-const page = () => {
+const Privacy = () => {
   return (
     <main>
       <Section marginBottom={true} marginTop={true}>
@@ -85,4 +85,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Privacy;
