@@ -64,6 +64,6 @@
     }
 
     h2 {
-      @apply text-xl md:text-5xl lg:text-6xl font-bold leading-[46px] md:leading-[72px] lg:leading-[84px];
+      @apply text-xl md:text-2xl lg:text-3xl font-semibold leading-[32px] md:leading-[40px] lg:leading-[48px];
     }
   }
