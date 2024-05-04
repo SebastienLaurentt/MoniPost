@@ -7,7 +7,7 @@ import SectionHeader from "../SectionHeader";
 
 const Supports = () => {
   return (
-    <Section>
+    <Section marginTop={true}>
       <SectionHeader title="Our" titleHighlight="Supports" />
       <ul className="flex flex-row justify-between items-center gap-x-4 md:gap-x-8 xl:gap-x-16 w-full px-4 md:px-8 xl:px-16">
         <li className="w-1/3">
