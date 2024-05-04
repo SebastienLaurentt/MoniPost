@@ -1,25 +1,27 @@
 import Image from "next/image";
+import EiffelLogo from "../../public/images/Eiffel.svg";
+import Lyon1Logo from "../../public/images/Lyon1.jpg";
+import UniversityLogo from "../../public/images/UniversityLyon.png";
 import Section from "../Section";
 import SectionHeader from "../SectionHeader";
-import EiffelLogo from "../../public/images/Eiffel.png";
-import Lyon1Logo from "../../public/images/Lyon1.png";
-import UniversityLogo from "../../public/images/UniversityLogo.png";
 
 const Supports = () => {
-  return <Section>
-    <SectionHeader title="Our" titleHighlight="Supports" />
-    <ul>
-      <li>
-        <Image src={EiffelLogo} alt="Phone" width={24} height={24} />
-      </li>
-      <li>
-        <Image src={Lyon1Logo} alt="Phone" width={24} height={24} />
-      </li>
-      <li>
-        <Image src={UniversityLogo} alt="Phone" width={24} height={24} />
-      </li>
-    </ul>
-  </Section>;
+  return (
+    <Section>
+      <SectionHeader title="Our" titleHighlight="Supports" />
+      <ul className="flex flex-row justify-center items-center gap-x-8 w-full mx-auto">
+        <li className="w-1/3">
+          <Image src={EiffelLogo} alt="University Eiffel Logo" />
+        </li>
+        <li className="w-1/3">
+          <Image src={Lyon1Logo} alt="University Lyon 1 Logo" />
+        </li>
+        <li className="w-1/3">
+          <Image src={UniversityLogo} alt="University Lyon Logo" />
+        </li>
+      </ul>
+    </Section>
+  );
 };
 
 export default Supports;
