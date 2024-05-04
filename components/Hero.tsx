@@ -1,9 +1,10 @@
 import { Medal } from "lucide-react";
 import { Button } from "./ui/button";
+import Section from "./Section";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col h-full justify-center items-center text-center mx-2 md:mx-6">
+    <Section classname="flex flex-col h-full justify-center items-center text-center ">
       <span className="flex flex-row px-4 mb-1 py-2 rounded-full gap-x-2 items-center border font-semibold bg-yellow-500">
         <Medal className="size-12" /> N°1 Start Up Innovation{" "}
       </span>
@@ -20,7 +21,7 @@ const Hero = () => {
         </p>
         <Button>Get MoniPost for free</Button>
       </div>
-    </div>
+    </Section>
   );
 };
 
