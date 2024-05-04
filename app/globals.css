@@ -60,6 +60,6 @@
     }
 
     h1 {
-      @apply text-3xl md:text-6xl font-bold;
+      @apply text-3xl md:text-5xl font-bold leading-[52px] md:leading-[80px];
     }
   }
