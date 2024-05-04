@@ -4,7 +4,7 @@ import Section from "@/components/Section";
 const page = () => {
   return (
     <main>
-      <Section>
+      <Section marginBottom={true} marginTop={true}>
         <PageTitle title="Privacy Policy of MobiPost" />
         <div className="flex flex-col gap-y-4">
           <div>
