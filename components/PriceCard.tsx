@@ -9,18 +9,18 @@ interface PriceCardProps {
 
 const PriceCard = ({ forfait, forfaitDescription, price }: PriceCardProps) => {
   return (
-    <div>
-      <div>
+    <div className="border p-4 rounded-lg flex flex-col">
+      <div className="px-2 py-8 border-b">
         <h3>{forfait}</h3>
-        <span>{forfaitDescription}</span>
+        <span className="w-[100px] italic">{forfaitDescription}</span>
       </div>
-      <div>
-        <span>
-          <span>${price}</span> <span> /month</span>
+      <div className="px-2 py-8 border-b flex flex-col gap-y-2">
+        <span className="">
+          <span className="font-bold text-2xl">${price}</span> <span> /month</span>
         </span>
         <Button>Choose</Button>
       </div>
-      <div>
+      <div className="px-2 py-8">
         <span className="flex flex-row gap-x-2">
           <span>
             <Check />
