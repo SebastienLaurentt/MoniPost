@@ -1,6 +1,7 @@
 import { Medal } from "lucide-react";
-import { Button } from "./ui/button";
+import Link from "next/link";
 import Section from "./Section";
+import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
@@ -19,7 +20,9 @@ const Hero = () => {
           Collect, analyze and make driving experience safer with postural data.
           We provide you a innovative way to create a safer driving experience.
         </p>
-        <Button>Get MoniPost for free</Button>
+        <Button>
+          <Link href="#price">Get MoniPost for free</Link>
+        </Button>
       </div>
     </Section>
   );
