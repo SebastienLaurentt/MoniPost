@@ -9,7 +9,7 @@ const Supports = () => {
   return (
     <Section marginTop={true}>
       <SectionHeader title="Our" titleHighlight="Supports" />
-      <ul className="flex flex-row justify-between items-center gap-x-4 md:gap-x-8 xl:gap-x-16 w-full px-4 md:px-8 xl:px-16">
+      <ul className="flex flex-row justify-between items-center gap-x-4 md:gap-x-12 lg:gap-x-16 xl:gap-x-20 w-full px-4 md:px-20 lg:px-24 xl:px-48 2xl:px-80">
         <li className="w-1/3">
           <Image src={EiffelLogo} alt="University Eiffel Logo" className="w-full" />
         </li>
