@@ -15,7 +15,7 @@ const Faq = () => {
         <AccordionItem value="item-1">
           <AccordionTrigger>Is MoniPost free for academics purposes ? </AccordionTrigger>
           <AccordionContent>
-            Yes, MoniPost is free for academics purposes. Please, contact us for more information.
+            Yes, MoniPost is free for academics purposes. 
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
