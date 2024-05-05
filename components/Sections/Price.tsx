@@ -5,10 +5,10 @@ import PriceCard from '../PriceCard'
 
 const Price = () => {
   return (
-    <Section marginTop={true} >
+    <Section marginTop={true} id='price' >
       <SectionHeader title="Choose your right" titleHighlight="plan" />
   
-      <ul id="price" className='flex flex-col gap-y-8 lg:flex-row lg:gap-x-4 lg:justify-center'>
+      <ul className='flex flex-col gap-y-8 lg:flex-row lg:gap-x-4 lg:justify-center'>
         <li>
           <PriceCard forfait="Basic" forfaitDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit." price={0} />
         </li>
