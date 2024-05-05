@@ -5,7 +5,7 @@ const Privacy = () => {
   return (
     <main>
       <Section marginBottom={true} marginTop={true}>
-        <PageTitle title="Privacy Policy of MobiPost" />
+        <PageTitle title="Privacy Policy of MoniPost" />
         <div className="flex flex-col gap-y-4">
           <div>
             <h2>Last Updated: 05.04.24 </h2>
@@ -76,7 +76,7 @@ const Privacy = () => {
             <h2>Contact Us</h2>
             <p>
               If you have any questions about this privacy policy, please
-              contact us at mobipost@contact.com.
+              contact us at monipost@contact.com.
             </p>
           </div>
         </div>
