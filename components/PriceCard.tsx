@@ -18,9 +18,9 @@ const PriceCard = ({ forfait, forfaitDescription, price }: PriceCardProps) => {
         <span className="">
           <span className="font-bold text-2xl">${price}</span> <span> /month</span>
         </span>
-        <Button>Choose</Button>
+        <Button variant="price" size="price">Choose</Button>
       </div>
-      <div className="px-2 pt-8 pb-4 ">
+      <div className="px-2 pt-8 pb-4 flex flex-col gap-y-2 ">
         <span className="flex flex-row gap-x-2">
           <span>
             <Check />
