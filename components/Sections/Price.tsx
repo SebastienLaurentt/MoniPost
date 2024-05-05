@@ -8,7 +8,7 @@ const Price = () => {
     <Section marginTop={true} >
       <SectionHeader title="Choose your right" titleHighlight="plan" />
   
-      <ul className='flex flex-col gap-y-8 lg:flex-row lg:gap-x-4 lg:justify-center'>
+      <ul id="price" className='flex flex-col gap-y-8 lg:flex-row lg:gap-x-4 lg:justify-center'>
         <li>
           <PriceCard forfait="Basic" forfaitDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit." price={0} />
         </li>
