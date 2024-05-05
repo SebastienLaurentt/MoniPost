@@ -9,10 +9,10 @@ interface PriceCardProps {
 
 const PriceCard = ({ forfait, forfaitDescription, price }: PriceCardProps) => {
   return (
-    <div className="border p-4 rounded-lg flex flex-col">
-      <div className="px-2 py-8 border-b">
+    <div className="border p-4 rounded-xl flex flex-col">
+      <div className="px-2 pb-8 pt-4 border-b">
         <h4>{forfait}</h4>
-        <span className="w-[100px]  italic">{forfaitDescription}</span>
+        <span className="block xl:w-[320px]  italic">{forfaitDescription}</span>
       </div>
       <div className="px-2 py-8 border-b flex flex-col gap-y-2">
         <span className="">
@@ -20,7 +20,7 @@ const PriceCard = ({ forfait, forfaitDescription, price }: PriceCardProps) => {
         </span>
         <Button>Choose</Button>
       </div>
-      <div className="px-2 py-8 ">
+      <div className="px-2 pt-8 pb-4 ">
         <span className="flex flex-row gap-x-2">
           <span>
             <Check />
