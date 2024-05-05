@@ -9,9 +9,9 @@ import SectionHeader from "../SectionHeader";
 
 const Faq = () => {
   return (
-    <Section marginTop={true}>
+    <Section marginTop={true} marginBottom={true}>
       <SectionHeader title="Frequently Asked" titleHighlight=" Questions" />
-      <Accordion type="single" collapsible >
+      <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">
           <AccordionTrigger>Is MoniPost free for academics purposes ? </AccordionTrigger>
           <AccordionContent>
