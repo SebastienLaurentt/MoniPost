@@ -19,15 +19,15 @@ const Faq = () => {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-        <AccordionTrigger>Is MoniPost free for academics purposes ? </AccordionTrigger>
+        <AccordionTrigger> What is the data format ? </AccordionTrigger>
           <AccordionContent>
-            Yes, MoniPost is free for academics purposes. Please, contact us for more information.
+            The data format is a XXX file.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-        <AccordionTrigger>Is MoniPost free for academics purposes ? </AccordionTrigger>
+        <AccordionTrigger>How can i ask more questions ?  </AccordionTrigger>
           <AccordionContent>
-            Yes, MoniPost is free for academics purposes. Please, contact us for more information.
+            You can ask more questions by contacting us at monipost@contact.com.
           </AccordionContent>
         </AccordionItem>
       </Accordion>
