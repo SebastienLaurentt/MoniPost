@@ -11,8 +11,8 @@ const PriceCard = ({ forfait, forfaitDescription, price }: PriceCardProps) => {
   return (
     <div className="border p-4 rounded-lg flex flex-col">
       <div className="px-2 py-8 border-b">
-        <h3>{forfait}</h3>
-        <span className="w-[100px] italic">{forfaitDescription}</span>
+        <h4>{forfait}</h4>
+        <span className="w-[100px]  italic">{forfaitDescription}</span>
       </div>
       <div className="px-2 py-8 border-b flex flex-col gap-y-2">
         <span className="">
@@ -20,30 +20,30 @@ const PriceCard = ({ forfait, forfaitDescription, price }: PriceCardProps) => {
         </span>
         <Button>Choose</Button>
       </div>
-      <div className="px-2 py-8">
+      <div className="px-2 py-8 ">
         <span className="flex flex-row gap-x-2">
           <span>
             <Check />
           </span>
-          <span>Lorem, ipsum dolor.</span>
+          <span className="text-foreground/70">Lorem, ipsum dolor.</span>
         </span>
         <span className="flex flex-row gap-x-2">
           <span>
             <Check />
           </span>
-          <span>Lorem, ipsum dolor.</span>
+          <span className="text-foreground/70">Lorem, ipsum dolor.</span>
         </span>
         <span className="flex flex-row gap-x-2">
           <span>
             <Check />
           </span>
-          <span>Lorem, ipsum dolor.</span>
+          <span className="text-foreground/70">Lorem, ipsum dolor.</span>
         </span>
         <span className="flex flex-row gap-x-2">
           <span>
             <Check />
           </span>
-          <span>Lorem, ipsum dolor.</span>
+          <span className="text-foreground/70">Lorem, ipsum dolor.</span>
         </span>
         <span></span>
       </div>
