@@ -33,7 +33,7 @@ const Hero = () => {
           We provide you a innovative way to create a safer driving experience.
         </p>
         <Button>
-          <Link href="#price">Get MoniPost for free</Link>
+          <Link href="/#price">Get MoniPost for free</Link>
         </Button>
       </div>
     </Section>

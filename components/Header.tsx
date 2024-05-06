@@ -17,7 +17,7 @@ const Header = () => {
           <ul className="flex flex-row items-center gap-x-4">
             <li>
               <Button>
-                <Link href="#price">Get MoniPost for free</Link>
+                <Link href="/#price">Get MoniPost for free</Link>
               </Button>
             </li>
           </ul>
