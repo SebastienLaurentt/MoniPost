@@ -12,7 +12,7 @@ const Footer = () => {
             Moni<span className="text-primary">Post</span>
           </span>
         </Link>
-        <nav className="w-full md:w-fit">
+        <nav className="w-full md:w-fit text-xs md:text-sm">
           <ul className="flex flex-row w-full justify-between gap-x-4">
             <li>
               <Link href="/privacy">Privacy Policy</Link>
