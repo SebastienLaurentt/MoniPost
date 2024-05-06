@@ -2,13 +2,25 @@ import { Medal } from "lucide-react";
 import Link from "next/link";
 import Section from "./Section";
 import { Button } from "./ui/button";
+import EiffelLogo from "../public/images/Eiffel.svg";
+import Lyon1Logo from "../public/images/Lyon1.jpg";
+import UniversityLogo from "../public/images/UniversityLyon.svg";
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <Section classname="flex flex-col  pt-32 items-center text-center  ">
-      <span className="flex flex-row px-4 mb-1 py-2 rounded-full gap-x-2 items-center border font-semibold bg-yellow-500">
-        <Medal className="size-12" /> N°1 Start Up Innovation{" "}
-      </span>
+    <Section classname="flex flex-col  pt-36 items-center text-center  ">
+      <ul className="flex flex-row justify-between items-center gap-x-4 w-[300px] md:w-[400px]">
+        <li className="w-1/3">
+          <Image src={EiffelLogo} alt="University Eiffel Logo" className="w-full" />
+        </li>
+        <li className="w-1/3">
+          <Image src={Lyon1Logo} alt="University Lyon 1 Logo" className="w-full" />
+        </li>
+        <li className="w-1/3">
+          <Image src={UniversityLogo} alt="University Lyon Logo" className="w-full" />
+        </li>
+      </ul>
       <div className=" flex flex-col items-center gap-y-4">
         <h1>
           Moni<span className="text-primary">Post</span> helps world to <br />{" "}
