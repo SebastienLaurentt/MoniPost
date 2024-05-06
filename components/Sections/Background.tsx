@@ -10,14 +10,15 @@ const Background = () => {
         title="Posture as a innovative"
         titleHighlight="measurement"
       />
-      <div className="flex flex-col md:flex-row md:items-center md:gap-x-4 lg:gap-x-12 xl:gap-x-20 gap-y-4">
-        <div className="md:w-1/2 md:p-4 xl:p-12">
-          <h3 className="hidden md:block text-3xl font-medium">Awareness Detection</h3>
+      <div className="flex flex-col lg:flex-row lg:items-center  lg:gap-x-8  gap-y-4">
+        <div className="lg:w-1/3 lg:p-4 xl:p-12">
+          <h3 className="hidden lg:block text-3xl font-medium">Awareness Detection</h3>
           <p>
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor laborum voluptates praesentium architecto vero consequuntur perspiciatis reprehenderit excepturi nostrum iure quae deleniti, eaque tempore! Ducimus, sit voluptate. Reiciendis distinctio expedita, dolorum porro earum quod possimus libero? Cumque facere soluta vitae.
+          Posture measurement can provide fundamental information for understanding driver behavior. Posture measurement can provide fundamental information for understanding driver behavior. Posture measurement can provide fundamental information for understanding driver behavior
+
           </p>
         </div>
-        <div className="md:w-1/2 md:p-4 xl:p-12">
+        <div className="lg:w-2/3 lg:p-4 xl:p-12">
           <Image src={BackgroundImg} alt="Background Image" className="w-full" />
         </div>
       </div>
