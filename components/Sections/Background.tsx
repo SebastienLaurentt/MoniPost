@@ -7,8 +7,8 @@ const Background = () => {
   return (
     <Section marginTop={true}>
       <SectionHeader
-        title="Posture as a innovative"
-        titleHighlight="measurement"
+        title="Human factors in"
+        titleHighlight="accidents"
       />
       <div className="flex flex-col lg:flex-row lg:items-center  lg:gap-x-8  gap-y-4">
         <div className="lg:w-1/3 lg:p-4 xl:p-12">
