@@ -23,7 +23,7 @@ const Hero = () => {
       </ul>
       <div className=" flex flex-col items-center gap-y-4">
         <h1>
-          Moni<span className="text-primary">Post</span> helps world to <br />{" "}
+          Moni<span className="text-primary">Post</span> helps world <br /> to {" "}
           <span className="bg-primary text-secondary p-2 rounded-lg">
             drive safer.
           </span>
