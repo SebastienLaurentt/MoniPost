@@ -14,7 +14,7 @@ const PosturalArgument = () => {
           </p>
         </div>
         <div>
-          <Image src="/images/posture.jpg" alt="DMS" width={1000} height={500} />
+          <Image src="/images/Posture.jpg" alt="DMS" width={1000} height={500} />
         </div>
       </div>
     </Section>
