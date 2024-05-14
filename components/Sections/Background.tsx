@@ -5,21 +5,20 @@ import SectionHeader from "../SectionHeader";
 const Background = () => {
   return (
     <Section marginTop={true}>
-      <SectionHeader title="Human factors in" titleHighlight="accidents" />
-      <div className="flex flex-col lg:flex-row lg:items-center  lg:gap-x-8  gap-y-4">
-        <div className="lg:w-1/3 lg:p-4 xl:p-12">
-          <h3 className="hidden lg:block text-3xl font-medium">
-            Awareness Detection
-          </h3>
-          <p>
-            Posture measurement can provide fundamental information for
-            understanding driver behavior. Posture measurement can provide
-            fundamental information for understanding driver behavior. Posture
-            measurement can provide fundamental information for understanding
-            driver behavior
+      <SectionHeader
+        title="Human factors are primarily responsible for"
+        titleHighlight="road accidents"
+      />
+      <div className="flex flex-col md:flex-row md:items-center gap-y-4 lg:px-12 xl:px-32">
+        <div className="md:w-1/2">
+          <p className="text-center md:text-left text-sm md:text-md">
+            Addressing human factors in road accidents is crucial for enhancing
+            safety. Understanding and mitigating human errors can significantly
+            reduce accident rates, saving lives and preventing injuries on the
+            road.
           </p>
         </div>
-        <div className="lg:w-2/3 lg:p-4 xl:p-12">
+        <div className="md:w-1/2">
           <HumansFactors />
         </div>
       </div>
