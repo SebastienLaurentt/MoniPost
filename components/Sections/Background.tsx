@@ -10,7 +10,7 @@ const Background = () => {
         title="Human factors are primarily responsible for"
         titleHighlight="road accidents"
       />
-      <div className="flex flex-col md:flex-row md:items-center gap-y-4 lg:px-12 xl:px-32">
+      <div className="flex flex-col md:flex-row md:items-center gap-y-12 lg:px-12 xl:px-32">
         <div className="md:w-1/2">
           <p className="text-center md:text-left text-sm md:text-md">
             Addressing human factors in road accidents is crucial for enhancing
