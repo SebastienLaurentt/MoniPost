@@ -6,7 +6,7 @@ const Dms = () => {
   return (
     <Section marginTop={true}>
       <SectionHeader title="Current models lack" titleHighlight="precision" />
-      <div className="flex flex-col lg:flex-row lg:items-center gap-y-4 lg:gap-x-16  xl:px-32">
+      <div className="flex flex-col lg:flex-row-reverse lg:items-center gap-y-4 lg:gap-x-16  xl:px-32">
         <div className="lg:w-3/4">
           <p className="text-center lg:text-left text-sm md:text-md">
             Driver monitoring systems, or DMS, are emerging as a promising
@@ -17,7 +17,7 @@ const Dms = () => {
           </p>
         </div>
         <div>
-          <Image src="/images/DMS.jpg" alt="DMS" width={1000} height={500} />
+          <Image src="/images/DMS.jpg" alt="DMS" width={1000} height={500} className='rounded-lg' />
         </div>
       </div>
     </Section>
