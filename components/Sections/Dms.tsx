@@ -4,7 +4,7 @@ import SectionHeader from "../SectionHeader";
 
 const Dms = () => {
   return (
-    <Section marginTop={true}>
+    <Section marginTop={true} dark={true}>
       <SectionHeader title="Current models lack" titleHighlight="precision" />
       <div className="flex flex-col lg:flex-row-reverse lg:items-center gap-y-4 lg:gap-x-16  xl:px-32">
         <div className="lg:w-3/4">

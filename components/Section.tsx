@@ -3,6 +3,7 @@ interface SectionProps {
   classname?: string;
   marginBottom?: boolean;
   marginTop?: boolean;
+  dark?: boolean;
   children: React.ReactNode;
 }
 
@@ -11,17 +12,19 @@ const Section = ({
   classname,
   marginBottom,
   marginTop,
+  dark,
   children,
 }: SectionProps) => {
-  const isMarginBottom = marginBottom ? "mb-32 md:mb-36 xl:mb-48" : "";
-  const isMarginTop = marginTop ? "mt-20 md:mt-24 xl:mt-28" : "";
+  const isMarginBottom = marginBottom ? "pb-32 md:pb-36 xl:pb-48" : "";
+  const isMarginTop = marginTop ? "pt-20 md:pt-24 xl:pt-28" : "";
+  const isDark = dark ? "dark" : "";
 
   return (
     <section
-    id={id}
-      className={`${classname} ${isMarginBottom} ${isMarginTop} px-4 md:px-10 xl:mx-auto xl:px-16  2xl:max-w-[1600px]`}
+      id={id}
+      className={`${classname} ${isMarginBottom} ${isMarginTop} ${isDark} px-4 md:px-10 xl:mx-auto xl:px-16   bg-background text-foreground`}
     >
-      {children}
+      <div className="2xl:max-w-[1600px] mx-auto">{children}</div>
     </section>
   );
 };

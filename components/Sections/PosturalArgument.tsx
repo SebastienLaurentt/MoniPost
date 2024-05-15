@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const PosturalArgument = () => {
   return (
-    <Section marginTop={true}>
+    <Section marginTop={true} marginBottom={true} dark={true}>
       <SectionHeader title="Postural data offers a" titleHighlight="better model" />
       <div className="flex flex-col md:flex-row md:items-center gap-y-4  lg:gap-x-16 xl:px-32">
         <div className="md:w-3/4">

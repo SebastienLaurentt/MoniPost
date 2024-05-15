@@ -5,7 +5,7 @@ import SectionHeader from "../SectionHeader";
 
 const Background = () => {
   return (
-    <Section marginTop={true}>
+    <Section marginTop={true} dark={true}>
       <SectionHeader
         title="Human factors are primarily responsible for"
         titleHighlight="road accidents"
