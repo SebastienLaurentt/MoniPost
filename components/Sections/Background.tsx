@@ -1,4 +1,5 @@
-import { HumansFactors } from "../Graphs/HumanFactors";
+
+import HumansFactors from "../Graphs/HumanFactors";
 import Section from "../Section";
 import SectionHeader from "../SectionHeader";
 
