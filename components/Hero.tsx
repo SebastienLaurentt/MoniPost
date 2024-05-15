@@ -1,29 +1,17 @@
-import { Medal } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-import Section from "./Section";
-import { Button } from "./ui/button";
 import EiffelLogo from "../public/images/Eiffel.svg";
 import Lyon1Logo from "../public/images/Lyon1.jpg";
 import UniversityLogo from "../public/images/UniversityLyon.svg";
-import Image from "next/image";
+import Section from "./Section";
+import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <Section classname="flex flex-col  pt-36 pb-32 items-center text-center  ">
-      <ul className="flex flex-row justify-between items-center gap-x-4 w-[300px] md:w-[400px] ">
-        <li className="w-1/3">
-          <Image src={EiffelLogo} alt="University Eiffel Logo" className="w-full" />
-        </li>
-        <li className="w-1/3">
-          <Image src={Lyon1Logo} alt="University Lyon 1 Logo" className="w-full" />
-        </li>
-        <li className="w-1/3">
-          <Image src={UniversityLogo} alt="University Lyon Logo" className="w-full" />
-        </li>
-      </ul>
-      <div className=" flex flex-col items-center gap-y-4">
+    <Section classname="flex flex-col  pt-36 pb-24 items-center text-center  ">
+      <div className=" flex flex-col items-center gap-y-4 mb-20">
         <h1>
-          Moni<span className="text-primary">Post</span> helps world <br /> to {" "}
+          Moni<span className="text-primary">Post</span> helps world <br /> to{" "}
           <span className="bg-primary text-secondary p-2 rounded-lg">
             drive safer.
           </span>
@@ -35,6 +23,34 @@ const Hero = () => {
         <Button>
           <Link href="/#price">Get MoniPost for free</Link>
         </Button>
+      </div>
+      <div className="flex flex-col items-center">
+        <ul className="flex flex-row justify-between items-center gap-x-4 w-[300px] md:w-[400px] mb-12">
+          <li className="w-1/3">
+            <Image
+              src={EiffelLogo}
+              alt="University Eiffel Logo"
+              className="w-full"
+            />
+          </li>
+          <li className="w-1/3">
+            <Image
+              src={Lyon1Logo}
+              alt="University Lyon 1 Logo"
+              className="w-full"
+            />
+          </li>
+          <li className="w-1/3">
+            <Image
+              src={UniversityLogo}
+              alt="University Lyon Logo"
+              className="w-full"
+            />
+          </li>
+        </ul>
+        <video preload="yes" autoPlay loop muted className="xl:w-4/5">
+          <source src="../videos/HeroVid.mp4" type="video/mp4" />
+        </video>
       </div>
     </Section>
   );
