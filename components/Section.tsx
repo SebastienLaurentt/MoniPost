@@ -24,7 +24,7 @@ const Section = ({
       id={id}
       className={`${classname} ${isMarginBottom} ${isMarginTop} ${isDark} px-4 md:px-10 xl:mx-auto xl:px-16   bg-background text-foreground`}
     >
-      <div className="2xl:max-w-[1600px] mx-auto">{children}</div>
+      <div className="2xl:max-w-[1600px] mx-auto flex flex-col items-center">{children}</div>
     </section>
   );
 };

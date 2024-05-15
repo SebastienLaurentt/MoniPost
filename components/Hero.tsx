@@ -10,7 +10,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <Section classname="flex flex-col  pt-36 pb-32 items-center text-center  ">
-      <ul className="flex flex-row justify-between items-center gap-x-4 w-[300px] md:w-[400px]">
+      <ul className="flex flex-row justify-between items-center gap-x-4 w-[300px] md:w-[400px] ">
         <li className="w-1/3">
           <Image src={EiffelLogo} alt="University Eiffel Logo" className="w-full" />
         </li>
