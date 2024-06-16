@@ -17,7 +17,7 @@ const Background = () => {
         classname="2xl:hidden mx-auto"
         textPosition="text-center"
       />
-      <div className="flex flex-col gap-y-12 md:flex-row md:items-center lg:gap-x-16">
+      <div className="flex flex-col gap-y-6 md:flex-row md:items-center lg:gap-x-16">
         <div className="md:w-1/2  lg:w-[600px] ">
           <div className="hidden flex-row justify-start 2xl:flex ">
             <span className="mb-2 rounded-full border-4 border-primary px-4 text-2xl font-extrabold">

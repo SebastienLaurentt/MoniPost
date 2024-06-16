@@ -17,7 +17,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
 }) => {
   return (
     <div
-      className={`mb-8 flex  w-[300px] flex-col items-center ${textPosition} font-bold md:mb-8 md:w-[440px] lg:w-[600px] ${classname}`}
+      className={`mb-8 flex w-[300px] flex-col items-center ${textPosition} font-bold md:mb-8 md:w-[440px] lg:w-[600px] ${classname}`}
     >
       <h2>
         <span>{title}</span>{" "}

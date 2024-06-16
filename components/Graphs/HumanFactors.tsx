@@ -10,7 +10,7 @@ const data = [
 
 export default function HumansFactors() {
   return (
-    <Stack direction="row" width="100%" textAlign="center" >
+    <Stack direction="row" width="100%" textAlign="center" className="h-[200px]" >
       <Box flexGrow={1}>
         <PieChart
           series={[
