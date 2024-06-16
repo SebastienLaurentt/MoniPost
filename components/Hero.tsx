@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <Section classname="flex flex-col pt-36 pb-24 items-center text-center bg-primary">
+    <Section classname="flex flex-col pt-24 pb-12 items-center text-center bg-primary">
       <div className=" mb-20 flex flex-col items-center  text-white">
         <AnimatedShinyText className="inline-flex items-center justify-center px-4  transition ease-out hover:text-neutral-600 hover:duration-300">
           <Shield className="mr-1" />
