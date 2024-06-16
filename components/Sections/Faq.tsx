@@ -52,7 +52,7 @@ const Faq = () => {
                 monipost@contact.com.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="item-1">
+            <AccordionItem value="item-4">
               <AccordionTrigger>Lorem ipsum dolor sit amet.</AccordionTrigger>
               <AccordionContent>Lorem ipsum dolor sit amet.</AccordionContent>
             </AccordionItem>
