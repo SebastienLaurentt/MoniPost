@@ -8,8 +8,8 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <Section classname="flex flex-col  pt-36 pb-24 items-center text-center  ">
-      <div className=" flex flex-col items-center gap-y-4 mb-20">
+    <Section classname="flex flex-col  pt-36 pb-24 items-center text-center bg-primary">
+      <div className=" flex flex-col items-center gap-y-4 mb-20  text-white">
         <h1>
           Moni<span className="text-primary">Post</span> helps world <br /> to{" "}
           <span className="bg-primary text-secondary p-2 rounded-lg">
