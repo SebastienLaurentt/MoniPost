@@ -4,7 +4,7 @@ import { Box, Stack } from "@mui/material";
 import { PieChart } from "@mui/x-charts/PieChart";
 
 const data = [
-  { label: "Humans", value: 90, color: "#16a34a" },
+  { label: "Humans", value: 90, color: "#064e3b" },
   { label: "Others", value: 10, color: "#18181b" },
 ];
 
@@ -27,7 +27,8 @@ export default function HumansFactors() {
             legend: {
               labelStyle: {
                 fontSize: 16,
-                fill: 'white',
+                fill: 'black',
+                fontWeight: 600,
               },
             },
           }}
