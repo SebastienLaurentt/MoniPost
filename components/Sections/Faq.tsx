@@ -11,7 +11,7 @@ const Faq = () => {
   return (
     <Section marginTop={true} marginBottom={true}>
       <SectionHeader title="Frequently Asked" titleHighlight=" Questions" />
-      <Accordion type="single" collapsible className="w-full md:px-8 xl:px-24">
+      <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
           <AccordionTrigger>Is MoniPost free for academics purposes ? </AccordionTrigger>
           <AccordionContent>

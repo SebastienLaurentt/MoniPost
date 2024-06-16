@@ -1,26 +1,37 @@
-import React from 'react'
-import Section from '../Section'
-import SectionHeader from '../SectionHeader'
-import PriceCard from '../PriceCard'
+import PriceCard from "../PriceCard";
+import Section from "../Section";
+import SectionHeader from "../SectionHeader";
 
 const Price = () => {
   return (
-    <Section marginTop={true} id='price' >
+    <Section marginTop={true} id="price">
       <SectionHeader title="Choose your right" titleHighlight="plan" />
-  
-      <ul className='flex flex-col gap-y-8 lg:flex-row lg:gap-x-4 lg:justify-center'>
+
+      <ul className="flex flex-col gap-y-8 lg:flex-row lg:justify-between lg:gap-x-4">
         <li>
-          <PriceCard forfait="Basic" forfaitDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit." price={0} />
+          <PriceCard
+            forfait="Basic"
+            forfaitDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            price={0}
+          />
         </li>
         <li>
-          <PriceCard forfait="Premium" forfaitDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. " price={19.99} />
+          <PriceCard
+            forfait="Premium"
+            forfaitDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+            price={19.99}
+          />
         </li>
         <li>
-          <PriceCard forfait="Enterprise" forfaitDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit." price={39.99} />
+          <PriceCard
+            forfait="Enterprise"
+            forfaitDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            price={39.99}
+          />
         </li>
       </ul>
     </Section>
-  )
-}
+  );
+};
 
-export default Price
+export default Price;
