@@ -14,7 +14,7 @@
     --popover-foreground: 240 10% 3.9%;
 
     /* Green */
-    --primary: 163 88% 20%;
+    --primary: 164 86% 16%;
     --primary-foreground: 163 88% 20%;
 
     /* Black */
@@ -43,7 +43,7 @@
   }
 
   h1 {
-    @apply text-2xl md:text-5xl lg:text-6xl font-bold leading-[50px] md:leading-[80px] lg:leading-[92px];
+    @apply text-2xl md:text-5xl lg:text-7xl font-bold leading-[50px] md:leading-[72px];
   }
 
   h2 {
