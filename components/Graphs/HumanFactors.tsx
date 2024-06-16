@@ -29,6 +29,7 @@ export default function HumansFactors() {
                 fontSize: 16,
                 fill: 'black',
                 fontWeight: 600,
+                fontFamily: 'Inconsolata, monospace',
               },
             },
           }}
