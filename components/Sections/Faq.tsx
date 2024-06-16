@@ -10,22 +10,27 @@ import SectionHeader from "../SectionHeader";
 const Faq = () => {
   return (
     <Section marginTop={true} marginBottom={true}>
-      <SectionHeader title="Frequently Asked" titleHighlight=" Questions" />
+      <SectionHeader
+        title="Frequently Asked"
+        titleHighlight=" Questions"
+        classname=" mx-auto"
+        textPosition="text-center"
+      />
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
-          <AccordionTrigger>Is MoniPost free for academics purposes ? </AccordionTrigger>
+          <AccordionTrigger>
+            Is MoniPost free for academics purposes ?{" "}
+          </AccordionTrigger>
           <AccordionContent>
-            Yes, MoniPost is free for academics purposes. 
+            Yes, MoniPost is free for academics purposes.
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-        <AccordionTrigger> What is the data format ? </AccordionTrigger>
-          <AccordionContent>
-            The data format is a XXX file.
-          </AccordionContent>
+          <AccordionTrigger> What is the data format ? </AccordionTrigger>
+          <AccordionContent>The data format is a XXX file.</AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-        <AccordionTrigger>How can i ask more questions ?  </AccordionTrigger>
+          <AccordionTrigger>How can i ask more questions ? </AccordionTrigger>
           <AccordionContent>
             You can ask more questions by contacting us at monipost@contact.com.
           </AccordionContent>

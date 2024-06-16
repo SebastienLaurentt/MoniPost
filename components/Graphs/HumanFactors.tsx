@@ -10,7 +10,7 @@ const data = [
 
 export default function HumansFactors() {
   return (
-    <Stack direction="row" width="100%" textAlign="center">
+    <Stack direction="row" width="100%" textAlign="center" >
       <Box flexGrow={1}>
         <PieChart
           series={[
@@ -21,7 +21,7 @@ export default function HumansFactors() {
               paddingAngle: 5,
             },
           ]}
-          width={350}
+
           height={200}
           slotProps={{
             legend: {

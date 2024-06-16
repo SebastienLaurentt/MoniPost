@@ -8,9 +8,17 @@ const Background = () => {
       <SectionHeader
         title="Human factors are primarily responsible for"
         titleHighlight="road accidents"
+        classname="2xl:hidden mx-auto"
+        textPosition="text-center"
       />
-      <div className="flex flex-col gap-y-12 md:flex-row md:items-center">
-        <div className="md:w-1/2 lg:mr-8 lg:w-2/3 xl:mr-24">
+      <div className="flex flex-col gap-y-12 md:flex-row md:items-center lg:gap-x-16">
+        <div className="md:w-1/2  lg:w-[600px] ">
+          <SectionHeader
+            title="Human factors are primarily responsible for"
+            titleHighlight="road accidents"
+            classname="hidden 2xl:flex"
+            textPosition="text-left"
+          />
           <p className="text-center text-sm md:text-left md:text-md">
             Addressing human factors in road accidents is crucial for enhancing
             safety. Understanding and mitigating human errors can significantly
@@ -18,7 +26,7 @@ const Background = () => {
             road.
           </p>
         </div>
-        <div className="md:w-1/2">
+        <div className=" w-[350px]  xl:mx-auto 2xl:w-[609px]">
           <HumansFactors />
         </div>
       </div>

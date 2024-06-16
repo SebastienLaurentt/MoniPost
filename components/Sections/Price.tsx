@@ -5,9 +5,14 @@ import SectionHeader from "../SectionHeader";
 const Price = () => {
   return (
     <Section marginTop={true} id="price" classname="">
-      <SectionHeader title="Choose your right" titleHighlight="plan" />
+      <SectionHeader
+        title="Choose your right"
+        titleHighlight="plan"
+        classname=" mx-auto"
+        textPosition="text-center"
+      />
 
-      <ul className="flex flex-col gap-y-8 lg:flex-row lg:justify-around lg:gap-x-4">
+      <ul className="flex flex-col gap-y-8 md:px-8 lg:flex-row lg:justify-around lg:gap-x-4 lg:px-0">
         <li>
           <PriceCard
             forfait="Basic"

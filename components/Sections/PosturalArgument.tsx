@@ -8,9 +8,17 @@ const PosturalArgument = () => {
       <SectionHeader
         title="Postural data offers a"
         titleHighlight="better model"
+        classname="2xl:hidden mx-auto"
+        textPosition="text-center"
       />
       <div className="flex flex-col gap-y-4 lg:flex-row lg:items-center lg:gap-x-16">
         <div className="lg:w-3/4">
+          <SectionHeader
+            title="Postural data offers a"
+            titleHighlight="better model"
+            classname="hidden 2xl:flex"
+            textPosition="text-left"
+          />
           <p className="text-center text-sm md:text-md lg:text-left">
             To address the lack of data, we were able to establish a
             large-scale, high-quality annotated dataset within the
