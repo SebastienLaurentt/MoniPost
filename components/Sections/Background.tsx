@@ -5,6 +5,12 @@ import SectionHeader from "../SectionHeader";
 const Background = () => {
   return (
     <Section marginTop={true}>
+      <div className="flex flex-row justify-center 2xl:hidden">
+        <span className="mb-2 rounded-full border-4 border-primary px-3 text-lg font-extrabold">
+          1
+        </span>
+      </div>
+
       <SectionHeader
         title="Human factors are primarily responsible for"
         titleHighlight="road accidents"
@@ -13,6 +19,11 @@ const Background = () => {
       />
       <div className="flex flex-col gap-y-12 md:flex-row md:items-center lg:gap-x-16">
         <div className="md:w-1/2  lg:w-[600px] ">
+          <div className="hidden flex-row justify-start 2xl:flex ">
+            <span className="mb-2 rounded-full border-4 border-primary px-4 text-2xl font-extrabold">
+              1
+            </span>
+          </div>
           <SectionHeader
             title="Human factors are primarily responsible for"
             titleHighlight="road accidents"
