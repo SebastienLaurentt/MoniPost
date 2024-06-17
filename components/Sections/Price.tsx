@@ -53,7 +53,7 @@ const Price = () => {
       <SectionHeader
         title="Choose your right"
         titleHighlight="plan"
-        classname=" mx-auto"
+        classname="mx-auto"
         textPosition="text-center"
         id="price-element1"
       />

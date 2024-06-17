@@ -66,10 +66,10 @@ const Background = () => {
           classname="opacity-0 mx-auto"
           textPosition="text-center items-center"
         />
-        <div className="flex flex-col lg:mt-6 lg:w-full lg:flex-row lg:items-center">
+        <div className="flex flex-col md:w-full md:flex-row md:items-center md:gap-x-2 lg:mt-6 lg:gap-x-4">
           <p
             id="background-element3"
-            className="mb-4 text-center text-sm opacity-0 md:text-md lg:w-[600px] lg:text-left xl:mb-0"
+            className="mb-4 text-center text-sm opacity-0 md:w-[400px] md:text-left md:text-md lg:w-[600px] xl:mb-0"
           >
             Addressing human factors in road accidents is crucial for enhancing
             safety. Understanding and mitigating human errors can significantly
