@@ -5,10 +5,7 @@ interface SectionHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
   titleHighlight: string;
   titleDescription?: string;
   classname?: string;
-  textPosition?:
-    | "text-center items-center"
-    | "text-left xl:items-start"
-    | "text-right";
+  textPosition?: string;
 }
 
 const SectionHeader: React.FC<SectionHeaderProps> = ({

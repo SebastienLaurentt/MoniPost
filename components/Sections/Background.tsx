@@ -1,71 +1,86 @@
 "use client";
 
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
-import HumansFactors from '../Graphs/HumanFactors';
-import Section from '../Section';
-import SectionHeader from '../SectionHeader';
-import useOnScreen from '@/app/hooks/useOnView';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
+import HumansFactors from "../Graphs/HumanFactors";
+import Section from "../Section";
+import SectionHeader from "../SectionHeader";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Background = () => {
-  const [ref, isVisible] = useOnScreen({ threshold: 0.8 });
-
   useEffect(() => {
-    const element = ref.current;
-    if (isVisible) {
-      gsap.to(element, { opacity: 1, y: 0, duration: 1 });
-      // Animate elements by IDs
-      gsap.to("#element1", { opacity: 1, y: 0, duration: 1 });
-      gsap.to("#element2", { opacity: 1, y: 0, duration: 1 });
-    } else {
-      gsap.to(element, { opacity: 0, y: 20, duration: 1 });
-      // Animate elements by IDs
-      gsap.to("#element1", { opacity: 0, y: 20, duration: 1 });
-      gsap.to("#element2", { opacity: 0, y: 20, duration: 1 });
-    }
-  }, [isVisible, ref]);
+    // Animation GSAP
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#background-section",
+        start: "top center+=100",
+      },
+    });
+    tl.fromTo(
+      "#background-element1",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1 }
+    );
+    tl.fromTo(
+      "#background-element2",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1 },
+      "<" 
+    );
+    tl.fromTo(
+      "#background-element3",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1 },
+      "<" 
+    );
+    tl.fromTo(
+      "#background-element4",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1, delay: 0.3},
+      "<" 
+    );
+
+    // Clean up
+    return () => {
+      tl.kill(); 
+    };
+  }, []);
 
   return (
-    <Section marginTop={true}>
-      <div className="flex flex-row justify-center xl:hidden">
-        <span id="element1" className="mb-2 rounded-full border-4 border-primary px-3 text-lg font-extrabold">
-          1
-        </span>
-      </div>
-
-      <SectionHeader
-        id="element2"
-        title="Human factors are primarily responsible for"
-        titleHighlight="road accidents"
-        classname="xl:hidden mx-auto"
-        textPosition="text-center items-center"
-      />
-      <div
-        ref={ref}
-        className="flex flex-col gap-y-6 md:flex-row md:items-center lg:gap-x-16"
-        style={{ opacity: 0, transform: 'translateY(20px)' }}
-      >
-        <div id="element3" className="md:w-1/2 lg:w-[600px]">
-          <div className="hidden flex-row justify-start xl:flex">
-            <span id="element4" className="mb-2 rounded-full border-4 border-primary px-4 text-2xl font-extrabold">
+    <Section id="background-section" marginTop={true}>
+      <div className="flex flex-col gap-y-6 md:flex-row md:items-center lg:gap-x-16">
+        <div className="md:w-1/2 lg:w-[600px]">
+          <div className="flex flex-row justify-center xl:justify-start">
+            <span
+              id="background-element1"
+              className="mb-2 rounded-full border-4 border-primary px-3 text-lg font-extrabold opacity-0 xl:px-4 xl:text-2xl"
+            >
               1
             </span>
           </div>
           <SectionHeader
-            id="element5"
+            id="background-element2"
             title="Human factors are primarily responsible for"
             titleHighlight="road accidents"
-            classname="hidden xl:flex"
-            textPosition="text-left xl:items-start"
+            classname="opacity-0 mx-auto xl:text-left"
+            textPosition="text-center xl:text-left items-center"
           />
-          <p id="element6" className="text-center text-sm md:text-left md:text-md">
+          <p
+            id="background-element3"
+            className="text-center text-sm opacity-0 md:text-left md:text-md"
+          >
             Addressing human factors in road accidents is crucial for enhancing
             safety. Understanding and mitigating human errors can significantly
             reduce accident rates, saving lives and preventing injuries on the
             road.
           </p>
         </div>
-        <div id="element7" className="w-[350px] xl:mx-auto 2xl:w-[609px]">
+        <div
+          id="background-element4"
+          className="w-[350px] opacity-0 xl:mx-auto 2xl:w-[609px]"
+        >
           <HumansFactors />
         </div>
       </div>
