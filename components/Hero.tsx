@@ -2,7 +2,6 @@ import { ArrowRightIcon, Shield } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import EiffelLogo from "../public/images/Eiffel.svg";
-import Lyon1Logo from "../public/images/Lyon1.svg";
 import Lyon1ss from "../public/images/Lyon1ss.png";
 import UniversityLogo from "../public/images/UniversityLyon.svg";
 import Section from "./Section";
@@ -23,9 +22,9 @@ const Hero = () => {
             Enhance Driving Safety. <br /> Empowering Safer Journeys.
           </h1>
           <p className="mx-auto w-[340px] text-[14px] md:w-[540px] md:text-md">
-            Collect, analyze and make driving experience safer with postural
-            data. We provide you a innovative way to create a safer driving
-            experience.
+            MoniPost enhances driving safety through scientific analysis of
+            postural data, offering an innovative way to create safer driving
+            experiences.
           </p>
         </div>
         <Button className="font-bold">
