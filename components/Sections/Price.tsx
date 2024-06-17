@@ -67,7 +67,7 @@ const Price = () => {
             icon={
               <CirclePlay
                 color="white"
-                className="size-10 rounded-full bg-primary p-2"
+                className="size-12 rounded-full bg-primary p-3"
               />
             }
           />
@@ -80,7 +80,7 @@ const Price = () => {
             icon={
               <FileText
                 color="white"
-                className="size-10 rounded-full bg-primary p-2"
+                className="size-12 rounded-full bg-primary p-3"
               />
             }
           />
@@ -93,7 +93,7 @@ const Price = () => {
             icon={
               <BriefcaseBusiness
                 color="white"
-                className="size-10 rounded-full bg-primary p-2"
+                className="size-12 rounded-full bg-primary p-3"
               />
             }
           />
