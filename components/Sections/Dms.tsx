@@ -19,19 +19,17 @@ const Dms = () => {
       },
     });
 
-    // Animation de l'élément 2
     tl.fromTo(
       "#dms-element1",
       { opacity: 0, y: 20 },
       { opacity: 1, y: 0, duration: 1 }
     );
 
-    // Animation de l'élément 3 avec chevauchement
     tl.fromTo(
       "#dms-element2",
       { opacity: 0, y: 20 },
       { opacity: 1, y: 0, duration: 1 },
-      "<" // Commence en même temps que l'élément précédent
+      "<" 
     );
     tl.fromTo(
       "#dms-element3",
@@ -48,7 +46,7 @@ const Dms = () => {
 
     // Clean up
     return () => {
-      tl.kill(); // Stop animations on unmount
+      tl.kill(); 
     };
   }, []);
 
