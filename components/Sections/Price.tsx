@@ -9,7 +9,7 @@ const Price = () => {
         title="Choose your right"
         titleHighlight="plan"
         classname=" mx-auto"
-        textPosition="text-center"
+        textPosition="text-center items-center"
       />
 
       <ul className="flex flex-col gap-y-8 md:px-8 lg:flex-row lg:justify-around lg:gap-x-4 lg:px-0">

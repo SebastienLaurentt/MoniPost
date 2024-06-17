@@ -5,7 +5,7 @@ import SectionHeader from "../SectionHeader";
 const Background = () => {
   return (
     <Section marginTop={true}>
-      <div className="flex flex-row justify-center 2xl:hidden">
+      <div className="flex flex-row justify-center xl:hidden">
         <span className="mb-2 rounded-full border-4 border-primary px-3 text-lg font-extrabold">
           1
         </span>
@@ -14,12 +14,12 @@ const Background = () => {
       <SectionHeader
         title="Human factors are primarily responsible for"
         titleHighlight="road accidents"
-        classname="2xl:hidden mx-auto"
-        textPosition="text-center"
+        classname="xl:hidden mx-auto"
+        textPosition="text-center items-center"
       />
       <div className="flex flex-col gap-y-6 md:flex-row md:items-center lg:gap-x-16">
         <div className="md:w-1/2  lg:w-[600px] ">
-          <div className="hidden flex-row justify-start 2xl:flex ">
+          <div className="hidden flex-row justify-start xl:flex ">
             <span className="mb-2 rounded-full border-4 border-primary px-4 text-2xl font-extrabold">
               1
             </span>
@@ -27,8 +27,8 @@ const Background = () => {
           <SectionHeader
             title="Human factors are primarily responsible for"
             titleHighlight="road accidents"
-            classname="hidden 2xl:flex"
-            textPosition="text-left"
+            classname="hidden xl:flex"
+            textPosition="text-left xl:items-start"
           />
           <p className="text-center text-sm md:text-left md:text-md">
             Addressing human factors in road accidents is crucial for enhancing

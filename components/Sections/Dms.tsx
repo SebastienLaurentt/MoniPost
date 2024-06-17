@@ -5,7 +5,7 @@ import SectionHeader from "../SectionHeader";
 const Dms = () => {
   return (
     <Section marginTop={true}>
-      <div className="flex flex-row justify-center 2xl:hidden">
+      <div className="flex flex-row justify-center xl:hidden">
         <span className="mb-2 rounded-full border-4 border-primary px-3 text-lg font-extrabold">
           2
         </span>
@@ -13,12 +13,12 @@ const Dms = () => {
       <SectionHeader
         title="Current models lack"
         titleHighlight="precision"
-        classname="2xl:hidden mx-auto"
-        textPosition="text-center"
+        classname="xl:hidden mx-auto"
+        textPosition="text-center items-center"
       />
       <div className="flex flex-col gap-y-4 lg:flex-row-reverse lg:items-center lg:gap-x-16 ">
         <div className="lg:w-3/4">
-          <div className="hidden flex-row justify-start 2xl:flex ">
+          <div className="hidden flex-row justify-start xl:flex ">
             <span className="mb-2 rounded-full border-4 border-primary px-4 text-2xl font-extrabold">
               2
             </span>
@@ -26,8 +26,8 @@ const Dms = () => {
           <SectionHeader
             title="Current models lack"
             titleHighlight="precision"
-            classname="hidden 2xl:flex"
-            textPosition="text-left"
+            classname="hidden xl:flex"
+            textPosition="text-left xl:items-start"
           />
           <p className="text-center text-sm md:text-md lg:text-left">
             Driver monitoring systems, or DMS, are emerging as a promising

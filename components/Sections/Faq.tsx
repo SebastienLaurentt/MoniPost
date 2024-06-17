@@ -15,10 +15,10 @@ const Faq = () => {
         title="Frequently Asked"
         titleHighlight=" Questions"
         classname=" mx-auto"
-        textPosition="text-center"
+        textPosition="text-center items-center"
       />
-      <div className="flex flex-row items-center justify-center xl:gap-x-16">
-        <div className="hidden xl:flex xl:w-1/3">
+      <div className="flex flex-row items-center justify-center lg:gap-x-8 xl:gap-x-16">
+        <div className="hidden lg:flex lg:w-1/3 xl:w-1/3">
           <Image
             src="/images/faq.png"
             alt="DMS"
@@ -27,7 +27,7 @@ const Faq = () => {
             className="rounded-lg"
           />
         </div>
-        <div className="xl:w-1/2">
+        <div className="w-full lg:w-2/3 xl:w-1/2">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger>
