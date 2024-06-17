@@ -51,6 +51,6 @@
   }
 
   h4 {
-    @apply text-3xl;
+    @apply text-xl font-bold;
   }
 }
