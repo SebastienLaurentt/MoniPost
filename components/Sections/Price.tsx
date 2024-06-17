@@ -15,7 +15,7 @@ const Price = () => {
       <ul className="flex flex-col gap-y-8 md:px-8 lg:flex-row lg:justify-around lg:gap-x-4 lg:px-0">
         <li>
           <PriceCard
-            forfait="Basic"
+            forfait="Starter"
             forfaitDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
             price={0}
           />

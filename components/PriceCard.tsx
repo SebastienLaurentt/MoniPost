@@ -28,27 +28,27 @@ const PriceCard = ({ forfait, forfaitDescription, price }: PriceCardProps) => {
         </Button>
       </div>
       <div className="flex flex-col gap-y-2 px-2 pb-4 pt-8 ">
-        <span className="flex flex-row gap-x-2">
-          <span>
-            <Check />
+        <span className="flex flex-row items-center gap-x-2">
+          <span className="rounded-full bg-primary p-0.5">
+            <Check color="white" size={24}/>
           </span>
           <span className="text-foreground/70">Lorem, ipsum dolor.</span>
         </span>
-        <span className="flex flex-row gap-x-2">
-          <span>
-            <Check />
+        <span className="flex flex-row items-center gap-x-2">
+          <span className="rounded-full bg-primary p-0.5">
+            <Check color="white" size={24}/>
           </span>
           <span className="text-foreground/70">Lorem, ipsum dolor.</span>
         </span>
-        <span className="flex flex-row gap-x-2">
-          <span>
-            <Check />
+        <span className="flex flex-row items-center gap-x-2">
+          <span className="rounded-full bg-primary p-0.5">
+            <Check color="white" size={24}/>
           </span>
           <span className="text-foreground/70">Lorem, ipsum dolor.</span>
         </span>
-        <span className="flex flex-row gap-x-2">
-          <span>
-            <Check />
+        <span className="flex flex-row items-center gap-x-2">
+          <span className="rounded-full bg-primary p-0.5">
+            <Check color="white" size={24}/>
           </span>
           <span className="text-foreground/70">Lorem, ipsum dolor.</span>
         </span>
