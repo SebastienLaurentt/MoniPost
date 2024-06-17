@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      {/* <Supports /> */}
       <Background />
       <Dms />
       <PosturalArgument />

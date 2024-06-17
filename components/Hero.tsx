@@ -61,9 +61,8 @@ const Hero = () => {
             id="hero-description"
             className="mx-auto w-[340px] text-[14px] opacity-0 md:w-[540px] md:text-md"
           >
-            MoniPost enhances driving safety through scientific analysis of
-            postural data, offering an innovative way to create safer driving
-            experiences.
+            An innovative way to create safer driving experiences through
+            scientific analysis of postural data
           </p>
         </div>
         <Button id="hero-button" className="font-bold opacity-0">

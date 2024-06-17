@@ -29,7 +29,7 @@ const Dms = () => {
       "#dms-element2",
       { opacity: 0, y: 20 },
       { opacity: 1, y: 0, duration: 1 },
-      "<" 
+      "<"
     );
     tl.fromTo(
       "#dms-element3",
@@ -46,14 +46,14 @@ const Dms = () => {
 
     // Clean up
     return () => {
-      tl.kill(); 
+      tl.kill();
     };
   }, []);
 
   return (
     <Section id="dms-section" marginTop={true}>
-      <div className="flex flex-col gap-y-4 lg:flex-row-reverse lg:items-center lg:gap-x-16">
-        <div className="lg:w-3/4">
+      <div className="flex flex-col gap-y-4 lg:items-center lg:gap-x-16 xl:flex-row-reverse">
+        <div className="xl:w-3/4">
           <div className="flex flex-row justify-center xl:justify-start">
             <span
               id="dms-element1"
@@ -71,7 +71,7 @@ const Dms = () => {
           />
           <p
             id="dms-element3"
-            className="text-center text-sm opacity-0 md:text-md lg:text-left"
+            className="text-center text-sm opacity-0 md:text-md xl:text-left"
           >
             Driver monitoring systems, or DMS, are emerging as a promising
             technology to assess a driver&apos;s attention and behavior while

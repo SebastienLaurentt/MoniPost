@@ -49,8 +49,8 @@ const PosturalArgument = () => {
 
   return (
     <Section id="postural-section" marginTop={true} marginBottom={true}>
-      <div className="flex flex-col gap-y-4 lg:flex-row lg:items-center lg:gap-x-16">
-        <div className="lg:w-3/4">
+      <div className="flex flex-col gap-y-4 lg:items-center lg:gap-x-16 xl:flex-row">
+        <div className="xl:w-3/4">
           <div className="flex flex-row justify-center xl:justify-start">
             <span
               id="postural-element1"
@@ -68,7 +68,7 @@ const PosturalArgument = () => {
           />
           <p
             id="postural-element3"
-            className="text-center text-sm opacity-0 md:text-md lg:text-left"
+            className="text-center text-sm opacity-0 md:text-md xl:text-left"
           >
             To address the lack of data, we were able to establish a
             large-scale, high-quality annotated dataset within the
