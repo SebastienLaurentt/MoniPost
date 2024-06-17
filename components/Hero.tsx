@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
 import EiffelLogo from "../public/images/Eiffel.svg";
-import Lyon1ss from "../public/images/Lyon1ss.png";
+import Lyon1Logo from "../public/images/Lyon1.png";
 import UniversityLogo from "../public/images/UniversityLyon.svg";
 import Section from "./Section";
 import AnimatedShinyText from "./ui/animated-shiny-text";
@@ -16,13 +16,21 @@ const Hero = () => {
   useEffect(() => {
     const screenWidth = window.innerWidth;
     // Hero Text Animation
-    gsap.fromTo("#hero-title", { opacity: 0, y: 20  }, { opacity: 1, y: 0,  duration: 1 });
+    gsap.fromTo(
+      "#hero-title",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1 }
+    );
     gsap.fromTo(
       "#hero-description",
       { opacity: 0, y: 20 },
-      { opacity: 1, y: 0,  duration: 1 }
+      { opacity: 1, y: 0, duration: 1 }
     );
-    gsap.fromTo("#hero-button", { opacity: 0, y: 20  }, { opacity: 1, y: 0,  duration: 1 });
+    gsap.fromTo(
+      "#hero-button",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1 }
+    );
     gsap.fromTo(
       "#hero-partners",
       { opacity: 0 },
@@ -36,7 +44,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <Section classname="flex flex-col pt-20 pb-20 items-center text-center bg-primary">
+    <Section classname="flex flex-col pt-16 pb-16 items-center text-center bg-primary">
       <div className="flex flex-col items-center text-white">
         <div id="hero-introducing" className="opacity-0">
           <AnimatedShinyText className="inline-flex items-center justify-center px-4  transition ease-out hover:text-neutral-600 hover:duration-300">
@@ -62,8 +70,11 @@ const Hero = () => {
           <Link href="/#price">Get MoniPost</Link>
         </Button>
       </div>
-      <div id="hero-partners" className="mt-8 flex flex-col items-center opacity-0">
-        <ul className="mb-12 flex w-[300px] flex-row items-center justify-between gap-x-4 md:w-[400px]">
+      <div
+        id="hero-partners"
+        className="mt-8 flex flex-col items-center opacity-0"
+      >
+        <ul className="flex w-[300px] flex-row items-center justify-between gap-x-4 md:w-[400px] lg:w-[500px] lg:gap-x-6 xl:w-[600px] xl:gap-x-8">
           <li className="w-1/3">
             <Image
               src={EiffelLogo}
@@ -73,7 +84,7 @@ const Hero = () => {
           </li>
           <li className="w-1/3">
             <Image
-              src={Lyon1ss}
+              src={Lyon1Logo}
               alt="University Lyon 1 Logo"
               className="w-full"
             />
