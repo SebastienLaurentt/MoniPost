@@ -1,5 +1,10 @@
 import { ArrowRightIcon, Shield } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
+import EiffelLogo from "../public/images/Eiffel.svg";
+import Lyon1Logo from "../public/images/Lyon1.svg";
+import Lyon1ss from "../public/images/Lyon1ss.png";
+import UniversityLogo from "../public/images/UniversityLyon.svg";
 import Section from "./Section";
 import AnimatedShinyText from "./ui/animated-shiny-text";
 import { Button } from "./ui/button";
@@ -9,7 +14,7 @@ const Hero = () => {
     <Section classname="flex flex-col pt-20 pb-20 items-center text-center bg-primary">
       <div className="flex flex-col items-center text-white">
         <AnimatedShinyText className="inline-flex items-center justify-center px-4  transition ease-out hover:text-neutral-600 hover:duration-300">
-          <Shield className="mr-1 size-4 md:size-6"/>
+          <Shield className="mr-1 size-4 md:size-6" />
           <span className="text-xs md:text-sm"> Introducing MoniPost</span>
           <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
         </AnimatedShinyText>
@@ -27,8 +32,8 @@ const Hero = () => {
           <Link href="/#price">Get MoniPost</Link>
         </Button>
       </div>
-      {/* <div className="flex flex-col items-center">
-        <ul className="flex flex-row justify-between items-center gap-x-4 w-[300px] md:w-[400px] mb-12">
+      <div className="mt-8 flex flex-col items-center">
+        <ul className="mb-12 flex w-[300px] flex-row items-center justify-between gap-x-4 md:w-[400px]">
           <li className="w-1/3">
             <Image
               src={EiffelLogo}
@@ -38,7 +43,7 @@ const Hero = () => {
           </li>
           <li className="w-1/3">
             <Image
-              src={Lyon1Logo}
+              src={Lyon1ss}
               alt="University Lyon 1 Logo"
               className="w-full"
             />
@@ -51,10 +56,10 @@ const Hero = () => {
             />
           </li>
         </ul>
-        <video preload="yes" autoPlay loop muted className="xl:w-4/5">
+        {/* <video preload="yes" autoPlay loop muted className="xl:w-4/5">
           <source src="../videos/HeroVid.mp4" type="video/mp4" />
-        </video>
-      </div> */}
+        </video> */}
+      </div>
     </Section>
   );
 };
