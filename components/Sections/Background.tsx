@@ -58,7 +58,7 @@ const Background = () => {
           </h3>
         </div>
 
-        <div className="flex flex-col md:w-full md:flex-row md:items-center md:gap-x-6">
+        <div className="flex flex-col md:w-full md:flex-row md:items-center md:gap-x-6 2xl:px-28">
           <p
             id="background-element3"
             className="mb-2 text-center text-sm opacity-0 md:w-1/2 md:text-left lg:text-md xl:mb-0"
