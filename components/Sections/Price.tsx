@@ -59,7 +59,7 @@ const Price = () => {
           Prices
         </h2>
         <h3 id="price-element2" className="w-[260px] opacity-0 md:w-[300px]">
-          Choose your right plan
+          Choose Your Right Plan
         </h3>
       </div>
 

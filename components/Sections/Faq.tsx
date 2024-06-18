@@ -61,7 +61,7 @@ const Faq = () => {
           Faq
         </h2>
         <h3 id="faq-subtitle" className="w-[260px] opacity-0 md:w-[300px]">
-          Choose your right plan
+          Frequently Asked Questions
         </h3>
       </div>
       <div className="flex flex-row items-center justify-center lg:gap-x-8 xl:gap-x-16">
