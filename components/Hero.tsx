@@ -44,9 +44,13 @@ const Hero = () => {
   }, []);
 
   return (
-    <Section classname="flex flex-col pt-16 pb-16 items-center text-center bg-primary">
+    <Section classname="relative overflow-hidden flex flex-col pt-16 pb-16 items-center text-center bg-primary">
       <div className="flex flex-col items-center text-white">
-        <Link href="/#background-section" id="hero-introducing" className="opacity-0">
+        <Link
+          href="/#background-section"
+          id="hero-introducing"
+          className="opacity-0"
+        >
           <AnimatedShinyText className="inline-flex items-center justify-center px-4  transition ease-out hover:text-neutral-600 hover:duration-300">
             <Shield className="mr-1 size-4 md:size-6" />
             <span className="text-xs md:text-sm"> Introducing MoniPost</span>
@@ -100,6 +104,7 @@ const Hero = () => {
           <source src="../videos/HeroVid.mp4" type="video/mp4" />
         </video> */}
       </div>
+      <div className="absolute left-8 size-[1000px] rounded-full border  border-white bg-secondary/50 md:left-80 lg:left-[800px] lg:top-40 xl:left-[1000px] xl:top-60 2xl:left-[1400px] 2xl:top-80" />
     </Section>
   );
 };
