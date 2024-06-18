@@ -66,15 +66,15 @@ const Team = () => {
             />
           </div>
           <div id="team-element3" className="opacity-0 md:w-1/2">
-            <span className="text-lg font-semibold lg:text-xl">
+            <span className=" flex flex-row justify-center text-lg font-semibold leading-5 md:justify-start lg:text-xl  lg:leading-6">
               Mingming Zhao
             </span>
-            <p className="my-2 lg:text-md">
+            <p className="my-2 text-center md:text-left lg:text-md">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Repudiandae aut pariatur, repellendus aspernatur at possimus
               dignissimos labore voluptatem libero impedit.
             </p>
-            <ul className="flex flex-row items-center gap-x-4">
+            <ul className="flex flex-row items-center justify-center gap-x-4 md:justify-start">
               <li>
                 <Link href="https://www.linkedin.com/in/mingming-zhao-23b13a146/">
                   <Linkedin className="size-6" />

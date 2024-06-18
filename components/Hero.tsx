@@ -46,13 +46,13 @@ const Hero = () => {
   return (
     <Section classname="flex flex-col pt-16 pb-16 items-center text-center bg-primary">
       <div className="flex flex-col items-center text-white">
-        <div id="hero-introducing" className="opacity-0">
+        <Link href="/#background-section" id="hero-introducing" className="opacity-0">
           <AnimatedShinyText className="inline-flex items-center justify-center px-4  transition ease-out hover:text-neutral-600 hover:duration-300">
             <Shield className="mr-1 size-4 md:size-6" />
             <span className="text-xs md:text-sm"> Introducing MoniPost</span>
             <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
           </AnimatedShinyText>
-        </div>
+        </Link>
         <div className="my-6 flex w-full flex-col justify-center">
           <h1 id="hero-title" className="mb-3 opacity-0">
             Enhance Driving Safety. <br /> Empowering Safer Journeys.
@@ -66,7 +66,7 @@ const Hero = () => {
           </p>
         </div>
         <Button id="hero-button" className="font-bold opacity-0">
-          <Link href="/#price">Get MoniPost</Link>
+          <Link href="/#price-section">Get MoniPost</Link>
         </Button>
       </div>
       <div
