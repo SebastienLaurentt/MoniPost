@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Check, CircleX, Minus } from "lucide-react";
 import Image from "next/image";
 import { useEffect } from "react";
-import DmsImg from "../../public/images/Dms.svg";
+import DmsImg from "../../public/images/DMS.svg";
 import PosturalImg from "../../public/images/Postural.svg";
 import Section from "../Section";
 
