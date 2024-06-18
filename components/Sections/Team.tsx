@@ -76,7 +76,10 @@ const Team = () => {
             </p>
             <ul className="flex flex-row items-center justify-center gap-x-4 md:justify-start">
               <li>
-                <Link href="https://www.linkedin.com/in/mingming-zhao-23b13a146/">
+                <Link
+                  href="https://www.linkedin.com/in/mingming-zhao-23b13a146/"
+                  target="_blank"
+                >
                   <Linkedin className="size-6" />
                 </Link>
               </li>
@@ -84,6 +87,7 @@ const Team = () => {
                 <Link
                   href="https://orcid.org/0000-0003-4355-7688"
                   className="size-6 rounded-full bg-secondary p-1 font-semibold text-secondary-foreground"
+                  target="_blank"
                 >
                   ID
                 </Link>
