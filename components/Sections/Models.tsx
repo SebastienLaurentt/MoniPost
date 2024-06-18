@@ -29,7 +29,7 @@ const Models = () => {
     tl.fromTo(
       "#model2",
       { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 1, delay: 0.5},
+      { opacity: 1, y: 0, duration: 1, delay: 0.5 },
       "<"
     );
 
@@ -42,7 +42,7 @@ const Models = () => {
   return (
     <Section id="dms-section" marginTop={true}>
       <ul className="flex flex-col gap-y-4 md:flex-row md:gap-x-8 md:gap-y-0 lg:text-md 2xl:px-28">
-        <li id="model1" className="rounded-md border p-4 opacity-0">
+        <li id="model1" className="rounded-md border p-4 opacity-0 xl:p-6">
           <h3 className="text-center">Current Models</h3>
           <ul className="my-4 space-y-1">
             <li className="flex flex-row gap-x-2">
@@ -64,7 +64,7 @@ const Models = () => {
         </li>
         <li
           id="model2"
-          className="rounded-md border bg-primary p-4 text-secondary-foreground opacity-0"
+          className="rounded-md border bg-primary p-4 text-secondary-foreground opacity-0 xl:p-6"
         >
           <h3 className="text-center">MoniPost Model</h3>
           <ul className="my-4 space-y-1">

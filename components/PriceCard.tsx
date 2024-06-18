@@ -27,16 +27,16 @@ const PriceCard = ({
   const bgColor = isFavorite ? "bg-secondary" : "";
   const textColor = isFavorite ? "text-white" : "";
   const buttonStyle = isFavorite
-    ? "bg-background text-md text-foreground hover:bg-background/90"
-    : "bg-primary text-md text-secondary-foreground";
+    ? "bg-emerald-600 text-md text-secondary-foreground hover:bg-emerald-600/80"
+    : "bg-secondary text-md text-secondary-foreground hover:bg-secondary/80";
 
   const iconStyle = isFavorite
     ? "bg-background text-foreground"
-    : "bg-primary text-secondary-foreground";
+    : "bg-secondary text-secondary-foreground";
 
   const checkStyle = isFavorite
     ? "text-foreground bg-background"
-    : "bg-primary text-secondary-foreground";
+    : "bg-secondary text-secondary-foreground";
 
   return (
     <div
@@ -55,7 +55,7 @@ const PriceCard = ({
           <span> /month</span>
         </span>
         <Button variant="price" size="price" className={`${buttonStyle}`}>
-          Choose
+          Get Started
         </Button>
       </div>
       <div className="flex flex-col gap-y-2 px-2 pb-4 pt-8">
@@ -84,7 +84,7 @@ const PriceCard = ({
           <span>Lorem, ipsum dolor.</span>
         </span>
         {isFavorite && (
-          <div className="absolute -right-14 top-6 flex h-8 w-48 rotate-45 items-center justify-center bg-background text-center font-bold uppercase text-foreground">
+          <div className="absolute -right-14 top-6 flex h-8 w-48 rotate-45 items-center justify-center bg-emerald-600 text-center font-bold uppercase text-secondary-foreground">
             {" "}
             Favorite{" "}
           </div>
