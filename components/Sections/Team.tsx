@@ -1,4 +1,6 @@
+import { Linkedin } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import FounderImg from "../../public/images/Founder.jpg";
 import Section from "../Section";
 
@@ -22,11 +24,26 @@ const Team = () => {
             <span className="text-lg font-semibold lg:text-xl">
               Mingming Zhao
             </span>
-            <p className="md:mt-2 lg:text-md">
+            <p className="my-2 lg:text-md">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Repudiandae aut pariatur, repellendus aspernatur at possimus
               dignissimos labore voluptatem libero impedit.
             </p>
+            <ul className="flex flex-row items-center gap-x-4">
+              <li>
+                <Link href="https://www.linkedin.com/in/mingming-zhao-23b13a146/">
+                  <Linkedin className="size-6" />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://orcid.org/0000-0003-4355-7688"
+                  className="size-6 rounded-full bg-secondary p-1 font-semibold text-secondary-foreground"
+                >
+                  ID
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
