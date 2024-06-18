@@ -1,7 +1,6 @@
 "use client";
 
 import gsap from "gsap";
-import { BriefcaseBusiness, CirclePlay, FileText } from "lucide-react";
 import { useEffect } from "react";
 import PriceCard from "../PriceCard";
 import Section from "../Section";
@@ -64,12 +63,7 @@ const Price = () => {
             forfait="Starter"
             forfaitDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
             price={0}
-            icon={
-              <CirclePlay
-                color="white"
-                className="size-12 rounded-full bg-primary p-3"
-              />
-            }
+            iconType="CirclePlay"
           />
         </li>
         <li id="price-element3">
@@ -77,25 +71,16 @@ const Price = () => {
             forfait="Premium"
             forfaitDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
             price={19.99}
-            icon={
-              <FileText
-                color="white"
-                className="size-12 rounded-full bg-primary p-3"
-              />
-            }
+            iconType="FileText"
           />
         </li>
-        <li id="price-element3">
+        <li id="price-element4">
           <PriceCard
             forfait="Enterprise"
             forfaitDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit."
             price={39.99}
-            icon={
-              <BriefcaseBusiness
-                color="white"
-                className="size-12 rounded-full bg-primary p-3"
-              />
-            }
+            iconType="BriefcaseBusiness"
+            isFavorite={true}
           />
         </li>
       </ul>
