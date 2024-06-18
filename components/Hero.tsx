@@ -104,7 +104,7 @@ const Hero = () => {
           <source src="../videos/HeroVid.mp4" type="video/mp4" />
         </video> */}
       </div>
-      <div className="absolute left-8 size-[1000px] rounded-full border  border-white bg-secondary/50 md:left-80 lg:left-[800px] lg:top-40 xl:left-[1000px] xl:top-60 2xl:left-[1500px] 2xl:top-80" />
+      <div className="absolute left-8 size-[1000px] rounded-full border  border-white bg-secondary/50 md:left-80 lg:left-[800px] lg:top-40 xl:left-[1000px] xl:top-60 2xl:left-[1600px] 2xl:top-80" />
     </Section>
   );
 };
