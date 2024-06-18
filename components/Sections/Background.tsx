@@ -2,10 +2,10 @@
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 import { useEffect } from "react";
-import HumansFactors from "../Graphs/HumanFactors";
+import BackgroundImg from "../../public/images/Background.svg";
 import Section from "../Section";
-import SectionHeader from "../SectionHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,25 +51,17 @@ const Background = () => {
   return (
     <Section id="background-section" classname="mt-12 xl:mt-16">
       <div className="flex flex-col md:items-center">
-        <div className="flex flex-row justify-center">
-          <span
-            id="background-element1"
-            className="mb-2 rounded-full border-4 border-primary px-3 text-lg font-extrabold opacity-0 xl:px-4 xl:text-2xl"
-          >
-            1
-          </span>
+        <div className="mb-2 flex flex-col items-center text-center">
+          <h2 id="background-element1" className="opacity-0">Background</h2>
+          <h3 id="background-element2" className="opacity-0 md:w-[400px]">
+            Humans factors mainly causes road accidents
+          </h3>
         </div>
-        <SectionHeader
-          id="background-element2"
-          title="Human factors are primarily responsible for"
-          titleHighlight="road accidents"
-          classname="opacity-0 mx-auto"
-          textPosition="text-center items-center"
-        />
-        <div className="flex flex-col md:w-full md:flex-row md:items-center md:gap-x-2 lg:mt-6 lg:gap-x-4">
+
+        <div className="flex flex-col md:w-full md:flex-row md:items-center md:gap-x-6">
           <p
             id="background-element3"
-            className="mb-4 text-center text-sm opacity-0 md:w-[400px] md:text-left md:text-md lg:w-[600px] xl:mb-0"
+            className="mb-2 text-center text-sm opacity-0 md:w-1/2 md:text-left lg:text-md xl:mb-0"
           >
             Addressing human factors in road accidents is crucial for enhancing
             safety. Understanding and mitigating human errors can significantly
@@ -78,9 +70,9 @@ const Background = () => {
           </p>
           <div
             id="background-element4"
-            className="w-[350px] opacity-0 md:mx-auto 2xl:w-[609px]"
+            className="mx-auto opacity-0 md:w-1/2 lg:w-3/5 2xl:w-[609px]"
           >
-            <HumansFactors />
+            <Image src={BackgroundImg} alt="car crash image" />
           </div>
         </div>
       </div>
