@@ -51,7 +51,7 @@
   }
 
   h3 {
-    @apply text-lg md:text-xl lg:text-2xl font-semibold leading-[28px] md:leading-[32px] lg:leading-[40px];
+    @apply text-lg md:text-xl lg:text-2xl font-semibold leading-[28px] md:leading-[32px] lg:leading-[36px];
   }
 
   h4 {
