@@ -1,9 +1,9 @@
 import Hero from "@/components/Hero";
 import Background from "@/components/Sections/Background";
-import Models from "@/components/Sections/Models";
 import Faq from "@/components/Sections/Faq";
-import PosturalArgument from "@/components/Sections/PosturalArgument";
+import Models from "@/components/Sections/Models";
 import Price from "@/components/Sections/Price";
+import Team from "@/components/Sections/Team";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <Hero />
       <Background />
       <Models />
+      <Team />
       {/* <PosturalArgument /> */}
       <Price />
       <Faq />
