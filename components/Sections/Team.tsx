@@ -1,26 +1,71 @@
+"use client";
+
+import gsap from "gsap";
 import { Linkedin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import FounderImg from "../../public/images/Founder.jpg";
 import Section from "../Section";
 
 const Team = () => {
+  useEffect(() => {
+    // Animation GSAP
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#team-section",
+        start: "top center+=50",
+      },
+    });
+
+    tl.fromTo(
+      "#team-element1",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1 }
+    );
+
+    tl.fromTo(
+      "#team-element2",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1 },
+      "<"
+    );
+
+    tl.fromTo(
+      "#team-element3",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1 },
+      "<"
+    );
+
+    // Clean up
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
   return (
-    <Section classname="mt-12 xl:mt-16">
+    <Section id="team-section" classname="mt-12 xl:mt-16">
       <div className="2xl:px-28">
-        <div className="mb-4 flex flex-col items-center text-center">
+        <div
+          id="team-element1"
+          className="mb-4 flex flex-col items-center text-center opacity-0"
+        >
           <h2 className="">Team</h2>
           <h3 className="md:w-[300px]">They Found MoniPost</h3>
         </div>
         <div className="flex flex-col md:w-full md:flex-row md:items-center md:justify-center lg:px-12 xl:px-28">
-          <div className=" mb-2  md:mx-auto md:mb-0 md:w-1/2 md:px-8  ">
+          <div
+            id="team-element2"
+            className=" mb-2 opacity-0  md:mx-auto md:mb-0 md:w-1/2 md:px-8  "
+          >
             <Image
               src={FounderImg}
               alt="Founder profil pic"
               className="rounded-xl"
             />
           </div>
-          <div className="md:w-1/2">
+          <div id="team-element3" className="opacity-0 md:w-1/2">
             <span className="text-lg font-semibold lg:text-xl">
               Mingming Zhao
             </span>
