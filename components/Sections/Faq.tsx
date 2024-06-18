@@ -70,7 +70,7 @@ const Faq = () => {
           id="faq-image"
         >
           <Image
-            src="/images/faq.png"
+            src="/images/Faq.svg"
             alt="DMS"
             width={500}
             height={500}
