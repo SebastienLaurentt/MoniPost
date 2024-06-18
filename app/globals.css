@@ -55,6 +55,6 @@
   }
 
   h4 {
-    @apply text-xl font-bold;
+    @apply text-sm lg:text-md text-left font-bold;
   }
 }

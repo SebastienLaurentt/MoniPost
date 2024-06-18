@@ -81,7 +81,7 @@ const Faq = () => {
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger>
-                Is MoniPost free for academics purposes?
+                Is MoniPost free for academics ?
               </AccordionTrigger>
               <AccordionContent>
                 Yes, MoniPost is free for academics purposes.
@@ -101,7 +101,7 @@ const Faq = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
-              <AccordionTrigger>Lorem ipsum dolor sit amet.</AccordionTrigger>
+              <AccordionTrigger>Lorem ipsum dolor sit amet ?</AccordionTrigger>
               <AccordionContent>Lorem ipsum dolor sit amet.</AccordionContent>
             </AccordionItem>
           </Accordion>

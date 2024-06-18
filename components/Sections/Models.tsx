@@ -62,10 +62,7 @@ const Models = () => {
             <Image src={DmsImg} alt="dms" />
           </div>
         </li>
-        <li
-          id="model2"
-          className="rounded-md border bg-primary p-4 text-secondary-foreground opacity-0 xl:p-6"
-        >
+        <li id="model2" className="rounded-md border-2 border-primary p-4  opacity-0 xl:p-6">
           <h3 className="text-center">MoniPost Model</h3>
           <ul className="my-4 space-y-1">
             <li className="flex flex-row gap-x-2">
@@ -77,7 +74,7 @@ const Models = () => {
             <li className="flex flex-row gap-x-2">
               <Minus /> Assess driver&apos;s attention and behavior
             </li>
-            <li className="flex flex-row items-center gap-x-2 font-bold md:text-md lg:text-lg">
+            <li className="flex flex-row items-center gap-x-2 font-bold text-primary-foreground md:text-md lg:text-lg">
               <Check /> Add Postural Data
             </li>
           </ul>
