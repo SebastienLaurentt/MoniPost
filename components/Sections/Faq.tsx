@@ -11,7 +11,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { useEffect } from "react";
 import Section from "../Section";
-import SectionHeader from "../SectionHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,6 +28,12 @@ const Faq = () => {
       { opacity: 0, y: 20 },
       { opacity: 1, y: 0, duration: 1 }
     );
+    tl.fromTo(
+      "#faq-subtitle",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1 },
+      "<"
+    );
 
     tl.fromTo(
       "#faq-accordion",
@@ -36,7 +41,6 @@ const Faq = () => {
       { opacity: 1, y: 0, duration: 1 },
       "<"
     );
-    
 
     tl.fromTo(
       "#faq-image",
@@ -44,7 +48,6 @@ const Faq = () => {
       { opacity: 1, y: 0, duration: 1 },
       "<"
     );
-    
 
     return () => {
       tl.kill();
@@ -53,13 +56,14 @@ const Faq = () => {
 
   return (
     <Section id="faq-section" marginTop={true} marginBottom={true}>
-      <SectionHeader
-        title="Frequently Asked"
-        titleHighlight=" Questions"
-        classname=" mx-auto opacity-0"
-        textPosition="text-center items-center"
-        id="faq-title"
-      />
+      <div className="mb-3 flex flex-col items-center text-center md:mb-4">
+        <h2 id="faq-title" className="opacity-0">
+          Faq
+        </h2>
+        <h3 id="faq-subtitle" className="w-[260px] opacity-0 md:w-[300px]">
+          Choose your right plan
+        </h3>
+      </div>
       <div className="flex flex-row items-center justify-center lg:gap-x-8 xl:gap-x-16">
         <div
           className="hidden opacity-0 lg:flex lg:w-1/3 xl:w-1/3"
