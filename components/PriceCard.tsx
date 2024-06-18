@@ -89,6 +89,9 @@ const PriceCard = ({
             Favorite{" "}
           </div>
         )}
+        {isFavorite && (
+          <div className="absolute left-20 size-[1000px] rounded-full  border border-gray-800 bg-secondary/50 md:left-60 lg:left-20 " />
+        )}
       </div>
     </div>
   );
