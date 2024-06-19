@@ -15,7 +15,7 @@ const Background = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#background-section",
-        start: "top center+=300",
+        start: "top center+=350",
       },
     });
     tl.fromTo(
