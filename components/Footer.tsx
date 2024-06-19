@@ -30,13 +30,13 @@ const Footer = () => {
           <div className="mb-3 flex justify-center md:justify-start">
             <ul className="flex flex-row gap-x-4 xl:text-md">
               <li>
-                <Link href="/#background-section" className="lg:hover:underline lg:hover:underline-offset-2">Background</Link>
+                <Link href="/#background-section" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Background section link">Background</Link>
               </li>
               <li>
-                <Link href="/#price-section" className="lg:hover:underline lg:hover:underline-offset-2">Prices</Link>
+                <Link href="/#price-section" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Prices section link">Prices</Link>
               </li>
               <li>
-                <Link href="/#team-section" className="lg:hover:underline lg:hover:underline-offset-2">Team</Link>
+                <Link href="/#team-section" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Team section link">Team</Link>
               </li>
             </ul>
           </div>
@@ -46,6 +46,7 @@ const Footer = () => {
                 <Link
                   href="https://www.linkedin.com/in/mingming-zhao-23b13a146/"
                   target="_blank"
+                  aria-label="Linkedin Mingming Zhao"
                 >
                   <Linkedin className="size-6 rounded-sm bg-background p-1" />
                 </Link>
@@ -55,6 +56,7 @@ const Footer = () => {
                   href="https://orcid.org/0000-0003-4355-7688"
                   className="size-6 rounded-sm bg-background p-1 font-bold"
                   target="_blank"
+                  aria-label="ORCID Mingming Zhao"
                 >
                   ID
                 </Link>
@@ -66,10 +68,10 @@ const Footer = () => {
             <nav className="">
               <ul className="mt-1 flex w-full flex-row justify-between gap-x-2 md:mt-0 md:gap-x-6">
                 <li>
-                  <Link href="/privacy" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Linkedin Mingming Zhao" >Privacy Policy</Link>
+                  <Link href="/privacy" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Privacy Policy link" >Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link href="/tes" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="ORCID Mingming Zhao">Terms of Service</Link>
+                  <Link href="/tes" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Terms of Service link" >Terms of Service</Link>
                 </li>
               </ul>
             </nav>
