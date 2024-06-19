@@ -70,7 +70,7 @@ const Hero = () => {
               scientific analysis of postural data
             </p>
           </div>
-          <Button id="hero-button" className="font-bold opacity-0">
+          <Button id="hero-button" className="font-bold opacity-0" asChild aria-label="Price Section link">
             <Link href="/#price-section">Get MoniPost</Link>
           </Button>
         </div>
