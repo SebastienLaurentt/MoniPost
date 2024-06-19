@@ -45,7 +45,7 @@ const Team = () => {
   }, []);
 
   return (
-    <Section id="team-section" classname="mt-12 xl:mt-16">
+    <Section marginBottom={true} id="team-section">
       <div className="2xl:px-28">
         <div
           id="team-element1"

@@ -19,7 +19,7 @@ const Faq = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#faq-section",
-        start: "top center+=100",
+        start: "top center+=50",
       },
     });
 
@@ -55,7 +55,7 @@ const Faq = () => {
   }, []);
 
   return (
-    <Section id="faq-section" marginTop={true} marginBottom={true}>
+    <Section id="faq-section" marginBottom={true}>
       <div className="mb-3 flex flex-col items-center text-center md:mb-4">
         <h2 id="faq-title" className="opacity-0">
           Faq

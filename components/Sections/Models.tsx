@@ -17,7 +17,8 @@ const Models = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#models-section",
-        start: "top center+=100",
+        start: "top center+=50",
+        markers: true,
       },
     });
 
@@ -52,7 +53,7 @@ const Models = () => {
   }, []);
 
   return (
-    <Section id="models-section" marginTop={true}>
+    <Section id="models-section" marginBottom={true}>
       <div className="mb-3 flex flex-col items-center text-center md:mb-4">
         <h2 id="models-element1" className="opacity-0">
           Solutions

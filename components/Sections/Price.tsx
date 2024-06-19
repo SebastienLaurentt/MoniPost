@@ -53,7 +53,7 @@ const Price = () => {
   }, []);
 
   return (
-    <Section marginTop={true} id="price-section">
+    <Section marginBottom={true} id="price-section">
       <div className="mb-3 flex flex-col items-center text-center md:mb-4">
         <h2 id="price-element1" className="opacity-0">
           Prices

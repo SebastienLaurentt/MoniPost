@@ -49,7 +49,7 @@ const Background = () => {
   }, []);
 
   return (
-    <Section id="background-section" classname="mt-12 xl:mt-16">
+    <Section id="background-section" marginTop={true} marginBottom={true}>
       <div className="flex flex-col md:items-center">
         <div className="mb-2 flex flex-col items-center text-center">
           <h2 id="background-element1" className="opacity-0">Background</h2>
