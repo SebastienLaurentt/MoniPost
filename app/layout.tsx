@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import VideoModal from "@/components/VideoModal";
 import { incosolata } from "@/lib/font";
 import { Metadata } from "next";
 import "./globals.css";
@@ -42,7 +43,10 @@ export default function RootLayout({
       </head>
       <body className={`${incosolata} flex flex-col `}>
         <Header />
-        <div className="flex-1">{children}</div>
+        <div className="flex-1">
+          <VideoModal />
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
