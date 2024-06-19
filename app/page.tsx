@@ -11,9 +11,9 @@ export default function Home() {
       <Hero />
       <Background />
       <Models />
+      <Price />
       <Team />
       {/* <PosturalArgument /> */}
-      <Price />
       <Faq />
     </main>
   );
