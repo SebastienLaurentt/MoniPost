@@ -18,16 +18,18 @@ const VideoModal = () => {
 
   return (
     <>
-      <Button
-        onClick={openModal}
-        className=" fixed bottom-0 left-2 z-50 w-[100px] space-x-2 border hover:bg-primary hover:text-secondary-foreground md:left-6 xl:bottom-6 "
-      >
-        <span>Video</span> <Eye />
-      </Button>
+      {!isOpen && (
+        <Button
+          onClick={openModal}
+          className="fixed bottom-0 left-2 z-50 w-[100px] space-x-2 border hover:border-primary hover:bg-primary hover:text-secondary-foreground md:left-6 xl:bottom-6"
+        >
+          <span>Video</span> <Eye />
+        </Button>
+      )}
 
       {isOpen &&
         createPortal(
-          <div className="fixed inset-0 z-10 flex items-center justify-center bg-black">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
             <div className="relative w-4/5 max-w-3xl overflow-hidden rounded-lg bg-white">
               <button
                 onClick={closeModal}
