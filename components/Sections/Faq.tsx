@@ -81,25 +81,31 @@ const Faq = () => {
                 Is MoniPost free for academics ?
               </AccordionTrigger>
               <AccordionContent>
-                Yes, MoniPost is free for academics purposes.
+                <span tabIndex={0}>
+                  Yes, MoniPost is free for academic purposes.
+                </span>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger> What is the data format? </AccordionTrigger>
               <AccordionContent>
-                The data format is a XXX file.
+                <span tabIndex={0}>The data format is a XXX file.</span>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
               <AccordionTrigger>How can I ask more questions?</AccordionTrigger>
               <AccordionContent>
-                You can ask more questions by contacting us at
-                monipost@contact.com.
+                <span tabIndex={0}>
+                You can ask more questions by contacting us at this email : monipost@contact.com
+                </span>
+                
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
               <AccordionTrigger>Lorem ipsum dolor sit amet ?</AccordionTrigger>
-              <AccordionContent>Lorem ipsum dolor sit amet.</AccordionContent>
+              <AccordionContent>
+                <span tabIndex={0}>Lorem ipsum dolor sit amet.</span>
+              </AccordionContent>
             </AccordionItem>
           </Accordion>
         </div>
