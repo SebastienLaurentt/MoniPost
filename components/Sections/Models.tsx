@@ -16,18 +16,30 @@ const Models = () => {
     // Animation GSAP
     const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: "#dms-section",
+        trigger: "#models-section",
         start: "top center+=100",
       },
     });
 
     tl.fromTo(
-      "#model1",
+      "#models-element1",
       { opacity: 0, y: 20 },
       { opacity: 1, y: 0, duration: 1 }
     );
     tl.fromTo(
-      "#model2",
+      "#models-element2",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1 },
+      "<"
+    );
+    tl.fromTo(
+      "#models-element3",
+      { opacity: 0, y: 20 },
+      { opacity: 1, y: 0, duration: 1 },
+      "<"
+    );
+    tl.fromTo(
+      "#models-element4",
       { opacity: 0, y: 20 },
       { opacity: 1, y: 0, duration: 1, delay: 0.5 },
       "<"
@@ -40,9 +52,17 @@ const Models = () => {
   }, []);
 
   return (
-    <Section id="dms-section" marginTop={true}>
+    <Section id="models-section" marginTop={true}>
+      <div className="mb-3 flex flex-col items-center text-center md:mb-4">
+        <h2 id="models-element1" className="opacity-0">
+          Solutions
+        </h2>
+        <h3 id="models-element2" className="w-[260px] opacity-0 md:w-[300px]">
+          Driver Monitoring Systems
+        </h3>
+      </div>
       <ul className="flex flex-col gap-y-4 md:flex-row md:gap-x-8 md:gap-y-0 lg:text-md 2xl:px-28">
-        <li id="model1" className="rounded-md border p-4 opacity-0 xl:p-6">
+        <li id="models-element3" className="rounded-md border p-4 opacity-0 xl:p-6">
           <h3 className="text-center">Current Models</h3>
           <ul className="my-4 space-y-1">
             <li className="flex flex-row gap-x-2">
@@ -62,7 +82,10 @@ const Models = () => {
             <Image src={DmsImg} alt="dms" />
           </div>
         </li>
-        <li id="model2" className="rounded-md border-2 border-primary p-4  opacity-0 xl:p-6">
+        <li
+          id="models-element4"
+          className="rounded-md border-2 border-primary p-4  opacity-0 xl:p-6"
+        >
           <h3 className="text-center">MoniPost Model</h3>
           <ul className="my-4 space-y-1">
             <li className="flex flex-row gap-x-2">
