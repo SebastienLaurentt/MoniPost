@@ -19,7 +19,7 @@ const Faq = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#faq-section",
-        start: "top center+=50",
+        start: "top center+=200",
       },
     });
 

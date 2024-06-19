@@ -17,8 +17,7 @@ const Models = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#models-section",
-        start: "top center+=50",
-        markers: true,
+        start: "top center+=300",
       },
     });
 

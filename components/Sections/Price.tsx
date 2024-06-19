@@ -11,7 +11,7 @@ const Price = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#price-section",
-        start: "top center+=50",
+        start: "top center+=200",
       },
     });
 

@@ -14,7 +14,7 @@ const Team = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: "#team-section",
-        start: "top center+=50",
+        start: "top center+=200",
       },
     });
 
