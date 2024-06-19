@@ -66,10 +66,10 @@ const Footer = () => {
             <nav className="">
               <ul className="mt-1 flex w-full flex-row justify-between gap-x-2 md:mt-0 md:gap-x-6">
                 <li>
-                  <Link href="/privacy" className="lg:hover:underline lg:hover:underline-offset-2">Privacy Policy</Link>
+                  <Link href="/privacy" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Linkedin Mingming Zhao" >Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link href="/tes" className="lg:hover:underline lg:hover:underline-offset-2">Terms of Service</Link>
+                  <Link href="/tes" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="ORCID Mingming Zhao">Terms of Service</Link>
                 </li>
               </ul>
             </nav>

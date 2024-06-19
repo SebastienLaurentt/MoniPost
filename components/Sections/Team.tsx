@@ -79,6 +79,7 @@ const Team = () => {
                 <Link
                   href="https://www.linkedin.com/in/mingming-zhao-23b13a146/"
                   target="_blank"
+                  aria-label="Linkedin Mingming Zhao"
                 >
                   <Linkedin className="size-6" />
                 </Link>
@@ -88,6 +89,7 @@ const Team = () => {
                   href="https://orcid.org/0000-0003-4355-7688"
                   className="size-6 rounded-full bg-secondary p-1 font-semibold text-secondary-foreground"
                   target="_blank"
+                  aria-label="ORCID Mingming Zhao"
                 >
                   ID
                 </Link>
