@@ -33,6 +33,9 @@ const Footer = () => {
                 <Link href="/#background-section" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Background section link">Background</Link>
               </li>
               <li>
+                <Link href="/#models-section" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Solution section link">Solutions</Link>
+              </li>
+              <li>
                 <Link href="/#price-section" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Prices section link">Prices</Link>
               </li>
               <li>
