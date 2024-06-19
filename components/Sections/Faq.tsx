@@ -65,19 +65,16 @@ const Faq = () => {
         </h3>
       </div>
       <div className="flex flex-row items-center justify-center lg:gap-x-8 xl:gap-x-16">
-        <div
-          className="hidden opacity-0 lg:flex lg:w-1/3 xl:w-1/3"
-          id="faq-image"
-        >
+        <div className="hidden opacity-0 lg:flex lg:w-1/2" id="faq-image">
           <Image
             src="/images/Faq.svg"
             alt="DMS"
             width={500}
             height={500}
-            className="rounded-lg"
+            className="w-full rounded-lg"
           />
         </div>
-        <div className="w-full opacity-0 lg:w-2/3 xl:w-1/2" id="faq-accordion">
+        <div className="w-full opacity-0 lg:w-1/2" id="faq-accordion">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger>
