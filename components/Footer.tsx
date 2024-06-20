@@ -1,4 +1,4 @@
-import { Linkedin, Shield } from "lucide-react";
+import { Heart, Linkedin, Shield } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import FooterLogo from "../public/images/FooterLogo.svg";
@@ -30,16 +30,40 @@ const Footer = () => {
           <div className="mb-3 flex justify-center md:justify-start">
             <ul className="flex flex-row gap-x-4 xl:text-md">
               <li>
-                <Link href="/#background-section" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Background section link">Background</Link>
+                <Link
+                  href="/#background-section"
+                  className="lg:hover:underline lg:hover:underline-offset-2"
+                  aria-label="Background section link"
+                >
+                  Background
+                </Link>
               </li>
               <li>
-                <Link href="/#models-section" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Solution section link">Solutions</Link>
+                <Link
+                  href="/#models-section"
+                  className="lg:hover:underline lg:hover:underline-offset-2"
+                  aria-label="Solution section link"
+                >
+                  Solutions
+                </Link>
               </li>
               <li>
-                <Link href="/#price-section" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Prices section link">Prices</Link>
+                <Link
+                  href="/#price-section"
+                  className="lg:hover:underline lg:hover:underline-offset-2"
+                  aria-label="Prices section link"
+                >
+                  Prices
+                </Link>
               </li>
               <li>
-                <Link href="/#team-section" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Team section link">Team</Link>
+                <Link
+                  href="/#team-section"
+                  className="lg:hover:underline lg:hover:underline-offset-2"
+                  aria-label="Team section link"
+                >
+                  Team
+                </Link>
               </li>
             </ul>
           </div>
@@ -66,15 +90,40 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="mx-auto flex w-full flex-col-reverse items-center justify-between text-xs text-secondary-foreground/70 md:flex-row md:text-sm">
-            <span> &copy; 2024 MoniPost - All right reserved</span>
-            <nav className="">
+          <div className="mx-auto flex w-full flex-col-reverse items-center justify-center text-xs text-secondary-foreground/70 md:flex-row md:justify-between md:text-sm lg:justify-center">
+            <Link
+              href="https://sebastienlaurent.fr"
+              className="flex flex-row items-center gap-x-1 md:mr-auto md:hidden lg:flex"
+            >
+              {" "}
+              Made by Sébastien with <Heart
+                className="size-4"
+                fill="white"
+              />{" "}
+            </Link>
+            <span className="lg:absolute ">
+              {" "}
+              &copy; 2024 MoniPost - All right reserved
+            </span>
+            <nav className="md:ml-auto">
               <ul className="mt-1 flex w-full flex-row justify-between gap-x-2 md:mt-0 md:gap-x-6">
                 <li>
-                  <Link href="/privacy" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Privacy Policy link" >Privacy Policy</Link>
+                  <Link
+                    href="/privacy"
+                    className="lg:hover:underline lg:hover:underline-offset-2"
+                    aria-label="Privacy Policy link"
+                  >
+                    Privacy Policy
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/tes" className="lg:hover:underline lg:hover:underline-offset-2" aria-label="Terms of Service link" >Terms of Service</Link>
+                  <Link
+                    href="/tes"
+                    className="lg:hover:underline lg:hover:underline-offset-2"
+                    aria-label="Terms of Service link"
+                  >
+                    Terms of Service
+                  </Link>
                 </li>
               </ul>
             </nav>
