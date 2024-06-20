@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="absolute bottom-8 right-0 hidden md:flex lg:bottom-12 xl:bottom-8">
               <Image
                 src={FooterLogo}
-                alt="MoniPost Logo"
+                alt="Safe Driving image (Credits : https://storyset.com/illustration/driving/bro)"
                 className=" md:w-[400px] xl:w-[450px]"
               />
             </div>

@@ -79,7 +79,7 @@ const Models = () => {
             </li>
           </ul>
           <div className="px-8 xl:px-24">
-            <Image src={DmsImg} alt="dms" />
+            <Image src={DmsImg} alt="Data modelisation image (Credits : https://storyset.com/illustration/business-plan/bro) " />
           </div>
         </li>
         <li
@@ -102,7 +102,7 @@ const Models = () => {
             </li>
           </ul>
           <div className="px-8 xl:px-24">
-            <Image src={PosturalImg} alt="dms" />
+            <Image src={PosturalImg} alt="Data modelisation image (Credits : https://storyset.com/illustration/data-report/bro)" />
           </div>
         </li>
       </ul>

@@ -68,7 +68,7 @@ const Faq = () => {
         <div className="hidden opacity-0 lg:flex lg:w-1/2" id="faq-image">
           <Image
             src="/images/Faq.svg"
-            alt="DMS"
+            alt="FAQ image (Credits : https://storyset.com/illustration/faq/bro)"
             width={500}
             height={500}
             className="w-full rounded-lg"

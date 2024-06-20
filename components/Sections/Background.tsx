@@ -72,7 +72,7 @@ const Background = () => {
             id="background-element4"
             className="mx-auto opacity-0 md:w-1/2 lg:w-3/5 2xl:w-[609px]"
           >
-            <Image src={BackgroundImg} alt="car crash image" />
+            <Image src={BackgroundImg} alt="Car crash image (Credits : https://storyset.com/illustration/car-crash/bro)" />
           </div>
         </div>
       </div>
