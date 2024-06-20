@@ -90,23 +90,18 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="mx-auto flex w-full flex-col-reverse items-center justify-center text-xs text-secondary-foreground/70 md:flex-row md:justify-between md:text-sm lg:justify-center">
+          <div className="mx-auto flex w-full flex-col-reverse items-center justify-center gap-y-1 text-xs text-secondary-foreground/70 md:flex-row md:justify-between md:gap-y-0 md:text-sm lg:justify-center">
             <Link
               href="https://sebastienlaurent.fr"
               className="flex flex-row items-center gap-x-1 md:mr-auto md:hidden lg:flex"
             >
-              {" "}
-              Made by Sébastien with <Heart
-                className="size-4"
-                fill="white"
-              />{" "}
+              Made by Sébastien with <Heart className="size-4" fill="white" />
             </Link>
             <span className="lg:absolute ">
-              {" "}
               &copy; 2024 MoniPost - All right reserved
             </span>
             <nav className="md:ml-auto">
-              <ul className="mt-1 flex w-full flex-row justify-between gap-x-2 md:mt-0 md:gap-x-6">
+              <ul className="mt-1 flex w-full flex-row justify-between gap-x-2 md:mt-0 md:gap-x-4">
                 <li>
                   <Link
                     href="/privacy"
