@@ -22,6 +22,7 @@ const VideoModal = () => {
         <Button
           onClick={openModal}
           className="fixed bottom-0 left-2 z-50 w-[100px] space-x-2 border hover:border-primary hover:bg-primary hover:text-secondary-foreground md:left-6 xl:bottom-6"
+          aria-label="Open video"
         >
           <span>Video</span> <Eye />
         </Button>
@@ -34,6 +35,7 @@ const VideoModal = () => {
               <button
                 onClick={closeModal}
                 className="absolute right-2 top-2 z-20 text-white"
+                aria-label="Close Video"
               >
                 <X />
               </button>
