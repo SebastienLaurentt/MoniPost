@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   title: "MoniPost - Enhance Driving Safety",
   description:
     "An innovative way to create safer driving experiences through scientific analysis of postural data",
-    metadataBase: new URL('https://monipost.com/'),
 };
 
 export default function RootLayout({
