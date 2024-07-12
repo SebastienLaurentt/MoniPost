@@ -21,7 +21,7 @@ const Footer = () => {
                   MoniPost
                 </span>
               </Link>
-              <p className="lg:text-md"> Wanna Try Monipost Soon ? </p>
+              <p className="lg:text-md"> Wanna Try MoniPost Soon ? </p>
               <WaitList />
             </div>
             {/* <div className="absolute bottom-8 right-0 hidden md:flex lg:bottom-12 xl:bottom-8">
