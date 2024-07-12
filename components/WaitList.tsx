@@ -32,56 +32,30 @@ export default function WaitList() {
   const [email, setEmail] = useState("");
   const [formState, setFormState] = useState<(typeof formStates)[number]>(INIT);
   const [errorMessage, setErrorMessage] = useState("");
+  const [showError, setShowError] = useState(false);
 
   const resetForm = () => {
     setEmail("");
     setFormState(INIT);
     setErrorMessage("");
-  };
-
-  /**
-   * Rate limit the number of submissions allowed
-   * @returns {boolean} true if the form has been successfully submitted in the past minute
-   */
-  const hasRecentSubmission = () => {
-    const time = new Date();
-    const timestamp = time.valueOf();
-    const previousTimestamp = localStorage.getItem("loops-form-timestamp");
-
-    // Indicate if the last sign up was less than a minute ago
-    if (
-      previousTimestamp &&
-      Number(previousTimestamp) + 60 * 1000 > timestamp
-    ) {
-      setFormState(ERROR);
-      setErrorMessage("Too many signups, please try again in a little while");
-      return true;
-    }
-
-    localStorage.setItem("loops-form-timestamp", timestamp.toString());
-    return false;
+    setShowError(false);
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    // Prevent the default form submission
     event.preventDefault();
 
-    // boundary conditions for submission
     if (formState !== INIT) return;
     if (!isValidEmail(email)) {
-      setFormState(ERROR);
-      setErrorMessage("Please enter a valid email");
+      displayError("Please enter a valid email");
       return;
     }
     if (hasRecentSubmission()) return;
     setFormState(SUBMITTING);
 
-    // build body
     const formBody = `userGroup=${encodeURIComponent(
       formStyles.userGroup
     )}&email=${encodeURIComponent(email)}&mailingLists=`;
 
-    // API request to add user to newsletter
     fetch(`https://${domain}/api/newsletter-form/${formStyles.id}`, {
       method: "POST",
       body: formBody,
@@ -96,109 +70,90 @@ export default function WaitList() {
           setFormState(SUCCESS);
         } else {
           dataPromise.then((data: any) => {
-            setFormState(ERROR);
-            setErrorMessage(data.message || res.statusText);
-            localStorage.setItem("loops-form-timestamp", "");
+            displayError(data.message || res.statusText);
           });
         }
       })
       .catch((error) => {
-        setFormState(ERROR);
-        // check for cloudflare error
         if (error.message === "Failed to fetch") {
-          setErrorMessage(
-            "Too many signups, please try again in a little while"
-          );
+          displayError("Too many signups, please try again in a little while");
         } else if (error.message) {
-          setErrorMessage(error.message);
+          displayError(error.message);
         }
-        localStorage.setItem("loops-form-timestamp", "");
       });
   };
 
-  const isInline = formStyles.formStyle === "inline";
+  const displayError = (message: string) => {
+    setFormState(ERROR);
+    setErrorMessage(message);
+    setShowError(true);
+    setTimeout(() => {
+      setShowError(false);
+      setErrorMessage("");
+      setFormState(INIT);
+    }, 3000);
+  };
 
-  switch (formState) {
-    case SUCCESS:
-      return (
+  const hasRecentSubmission = () => {
+    const time = new Date();
+    const timestamp = time.valueOf();
+    const previousTimestamp = localStorage.getItem("loops-form-timestamp");
+
+    if (
+      previousTimestamp &&
+      Number(previousTimestamp) + 60 * 1000 > timestamp
+    ) {
+      displayError("Too many signups, please try again in a little while");
+      return true;
+    }
+
+    localStorage.setItem("loops-form-timestamp", timestamp.toString());
+    return false;
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (showError) {
+      setShowError(false);
+      setErrorMessage("");
+      setFormState(INIT);
+    }
+    setEmail(e.target.value);
+  };
+
+  return (
+    <div>
+      {formState === SUCCESS ? (
         <div>
           <p>{formStyles.successMessage}</p>
         </div>
-      );
-    case ERROR:
-      return (
-        <>
-          <SignUpFormError />
-          <BackButton />
-        </>
-      );
-    default:
-      return (
+      ) : (
         <>
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-y-2 rounded-md  bg-background p-2 md:flex-row md:gap-x-2"
+            className="flex flex-col gap-y-2 rounded-md bg-background p-2 md:flex-row md:gap-x-2"
           >
             <Input
               type="text"
               name="email"
-              placeholder={formStyles.placeholderText}
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              placeholder={
+                showError ? errorMessage : formStyles.placeholderText
+              }
+              value={showError ? "" : email}
+              onChange={handleInputChange}
               required={true}
-              className="w-72"
+              className={`w-72 ${
+                showError ? "border-red-500 placeholder:text-red-500" : ""
+              }`}
+              style={{
+                color: showError ? "rgb(185, 28, 28)" : "",
+              }}
             />
             <SignUpFormButton />
           </form>
         </>
-      );
-  }
-
-  function SignUpFormError() {
-    return (
-      <div
-        style={{
-          alignItems: "center",
-          justifyContent: "center",
-          width: "100%",
-        }}
-      >
-        <p
-          style={{
-            fontFamily: "Inter, sans-serif",
-            color: "rgb(185, 28, 28)",
-            fontSize: "14px",
-          }}
-        >
-          {errorMessage || "Oops! Something went wrong, please try again"}
-        </p>
-      </div>
-    );
-  }
-
-  function BackButton() {
-    const [isHovered, setIsHovered] = useState(false);
-
-    return (
-      <button
-        style={{
-          color: "#6b7280",
-          font: "14px, Inter, sans-serif",
-          margin: "10px auto",
-          textAlign: "center",
-          background: "transparent",
-          border: "none",
-          cursor: "pointer",
-          textDecoration: isHovered ? "underline" : "none",
-        }}
-        onMouseOut={() => setIsHovered(false)}
-        onMouseOver={() => setIsHovered(true)}
-        onClick={resetForm}
-      >
-        &larr; Back
-      </button>
-    );
-  }
+      )}
+    </div>
+  );
 
   function SignUpFormButton({ props }: any) {
     return (
@@ -210,5 +165,5 @@ export default function WaitList() {
 }
 
 function isValidEmail(email: any) {
-  return /.+@.+/.test(email);
+  return /.+@.+\..+/.test(email);
 }
