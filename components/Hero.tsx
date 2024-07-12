@@ -44,7 +44,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="px-2 pb-2 md:px-6 md:pb-6 ">
+    <div className="bg-background px-2 pb-2 md:px-6 md:pb-6 ">
       <Section classname="relative overflow-hidden flex flex-col pt-16 pb-16 items-center text-center bg-primary rounded-b-md">
         <div className="flex flex-col items-center text-white">
           <Link
@@ -70,7 +70,12 @@ const Hero = () => {
               scientific analysis of postural data
             </p>
           </div>
-          <Button id="hero-button" className="font-bold opacity-0" asChild aria-label="Price Section link">
+          <Button
+            id="hero-button"
+            className="font-bold opacity-0"
+            asChild
+            aria-label="Price Section link"
+          >
             <Link href="/#price-section">Get MoniPost</Link>
           </Button>
         </div>
