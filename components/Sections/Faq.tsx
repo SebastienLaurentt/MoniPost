@@ -55,7 +55,7 @@ const Faq = () => {
   }, []);
 
   return (
-    <Section id="faq-section" >
+    <Section id="faq-section" classname="z-30">
       <div className="mb-3 flex flex-col items-center text-center md:mb-4">
         <h2 id="faq-title" className="opacity-0">
           Faq
@@ -96,9 +96,9 @@ const Faq = () => {
               <AccordionTrigger>How can I ask more questions?</AccordionTrigger>
               <AccordionContent>
                 <span tabIndex={0}>
-                You can ask more questions by contacting us at this email : monipost@contact.com
+                  You can ask more questions by contacting us at this email :
+                  monipost@contact.com
                 </span>
-                
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
