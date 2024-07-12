@@ -11,6 +11,7 @@ import UniversityLogo from "../public/images/UniversityLyon.svg";
 import Section from "./Section";
 import AnimatedShinyText from "./ui/animated-shiny-text";
 import { Button } from "./ui/button";
+import WaitList from "./WaitList";
 
 const Hero = () => {
   useEffect(() => {
@@ -70,14 +71,7 @@ const Hero = () => {
               scientific analysis of postural data
             </p>
           </div>
-          <Button
-            id="hero-button"
-            className="font-bold opacity-0"
-            asChild
-            aria-label="Price Section link"
-          >
-            <Link href="/#price-section">Get MoniPost</Link>
-          </Button>
+          <WaitList />
         </div>
         <div
           id="hero-partners"

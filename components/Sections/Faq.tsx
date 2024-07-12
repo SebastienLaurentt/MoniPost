@@ -55,7 +55,7 @@ const Faq = () => {
   }, []);
 
   return (
-    <Section id="faq-section"  marginBottom={true}>
+    <Section id="faq-section" >
       <div className="mb-3 flex flex-col items-center text-center md:mb-4">
         <h2 id="faq-title" className="opacity-0">
           Faq

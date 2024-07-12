@@ -1,34 +1,39 @@
+"use client";
+
 import { Heart, Linkedin, Shield } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
-import FooterLogo from "../public/images/FooterLogo.svg";
+import WaitList from "./WaitList";
 
 const Footer = () => {
   return (
 
-      <footer className=" px-2 pb-4 md:px-6 md:pb-6 ">
-        <div className=" w-full rounded-lg bg-primary p-6 text-secondary-foreground md:pt-8 xl:px-16 ">
+      <footer className="px-2 pb-4 md:px-6 md:pb-6 ">
+        <div className=" w-full rounded-lg bg-primary p-6 text-secondary-foreground md:pt-8 lg:pt-12 xl:px-16 ">
           <div className="relative mx-auto flex flex-col xl:max-w-screen-xl">
-            <div className=" mb-2 flex flex-row justify-center md:mb-6 md:justify-between">
-              <Link href="/" className="flex flex-row items-center gap-x-2">
-                <Shield
-                  color="white"
-                  className="size-8 md:size-10 lg:size-14"
-                  strokeWidth={3}
-                />
-                <span className="text-xl font-bold md:text-3xl lg:text-4xl">
-                  MoniPost
-                </span>
-              </Link>
-              <div className="absolute bottom-8 right-0 hidden md:flex lg:bottom-12 xl:bottom-8">
-                <Image
-                  src={FooterLogo}
-                  alt="Safe Driving image (Credits : https://storyset.com/illustration/driving/bro)"
-                  className=" md:w-[400px] xl:w-[450px]"
-                />
+            <div className="mb-6 flex flex-row justify-center xl:mb-12">
+              <div className="flex flex-col items-center gap-y-2 xl:gap-y-4">
+                <Link href="/" className="flex flex-row items-center gap-x-2">
+                  <Shield
+                    color="white"
+                    className="size-8 lg:size-14"
+                    strokeWidth={3}
+                  />
+                  <span className="text-3xl font-bold leading-8 lg:text-7xl lg:leading-[48px]">
+                    MoniPost
+                  </span>
+                </Link>
+                <p className="lg:text-md"> Wanna Try Monipost Soon ? </p>
+                <WaitList />
               </div>
+              {/* <div className="absolute bottom-8 right-0 hidden md:flex lg:bottom-12 xl:bottom-8">
+              <Image
+                src={FooterLogo}
+                alt="Safe Driving image (Credits : https://storyset.com/illustration/driving/bro)"
+                className=" md:w-[400px] xl:w-[450px]"
+              />
+            </div> */}
             </div>
-            <div className="mb-3 flex justify-center md:justify-start">
+            <div className="mb-3 flex justify-center ">
               <ul className="flex flex-row gap-x-4 xl:text-md">
                 <li>
                   <Link
@@ -69,7 +74,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="mb-3">
-              <ul className="flex flex-row items-center justify-center gap-x-3 text-foreground md:justify-start">
+              <ul className="flex flex-row items-center justify-center gap-x-3 text-foreground">
                 <li>
                   <Link
                     href="https://www.linkedin.com/in/mingming-zhao-23b13a146/"
@@ -127,6 +132,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+
   );
 };
 
