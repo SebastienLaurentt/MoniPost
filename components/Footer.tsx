@@ -5,7 +5,7 @@ import FooterLogo from "../public/images/FooterLogo.svg";
 
 const Footer = () => {
   return (
-    <div className="fixed bottom-0 z-10 w-full">
+
       <footer className=" px-2 pb-4 md:px-6 md:pb-6 ">
         <div className=" w-full rounded-lg bg-primary p-6 text-secondary-foreground md:pt-8 xl:px-16 ">
           <div className="relative mx-auto flex flex-col xl:max-w-screen-xl">
@@ -127,7 +127,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </div>
   );
 };
 

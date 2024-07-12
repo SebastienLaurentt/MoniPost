@@ -44,7 +44,7 @@ export default function RootLayout({
       </head>
       <body className={`${incosolata} flex flex-col `}>
         <Header />
-        <div className="z-20 flex-1">
+        <div className="flex-1">
           <VideoModal />
           {children}
         </div>
