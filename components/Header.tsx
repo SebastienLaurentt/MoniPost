@@ -10,6 +10,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import ProjectsDropdown from "./ProjectsDropdown/ProjectsDropdown";
 
 const Header = () => {
   const pathname = usePathname();
@@ -58,44 +59,7 @@ const Header = () => {
               </li>
             </ul>
           </nav>
-          <div className="lg:hidden">
-            <DropdownMenu>
-              <DropdownMenuTrigger className="text-md text-white">
-                Menu
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="mr-2">
-                <DropdownMenuItem>
-                  <Link
-                    href="/#background-section"
-                    aria-label="Background section link"
-                  >
-                    Background
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link
-                    href="/#models-section"
-                    aria-label="Models section link"
-                  >
-                    Solutions
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link
-                    href="/#prices-section"
-                    aria-label="Prices section link"
-                  >
-                    Prices
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link href="/#team-section" aria-label="Team section link">
-                    Team
-                  </Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
+          <ProjectsDropdown />
         </div>
       </div>
     </header>
