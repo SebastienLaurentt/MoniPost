@@ -10,7 +10,6 @@ import Lyon1Logo from "../public/images/Lyon1.png";
 import UniversityLogo from "../public/images/UniversityLyon.svg";
 import Section from "./Section";
 import AnimatedShinyText from "./ui/animated-shiny-text";
-import { Button } from "./ui/button";
 import WaitList from "./WaitList";
 
 const Hero = () => {
@@ -71,7 +70,9 @@ const Hero = () => {
               scientific analysis of postural data
             </p>
           </div>
-          <WaitList />
+          <div id="hero-button" className="opacity-0">
+            <WaitList />
+          </div>
         </div>
         <div
           id="hero-partners"
