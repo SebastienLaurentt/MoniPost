@@ -45,7 +45,7 @@ const Hero = () => {
 
   return (
     <div className="bg-background px-2 pb-2 md:px-6 md:pb-6 ">
-      <Section classname="relative overflow-hidden flex flex-col pt-16 pb-16 items-center text-center bg-primary rounded-b-md">
+      <Section classname="relative overflow-hidden flex flex-col pt-16 pb-16 items-center text-center bg-primary rounded-b-md mx-auto max-w-[2000px]">
         <div className="flex flex-col items-center text-white">
           <Link
             href="/#background-section"

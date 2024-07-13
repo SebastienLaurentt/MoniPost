@@ -4,12 +4,6 @@ import { Shield } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import ProjectsDropdown from "./ProjectsDropdown/ProjectsDropdown";
 
 const Header = () => {
@@ -17,9 +11,9 @@ const Header = () => {
   const headerRounded = pathname === "/" ? "rounded-t-md" : "rounded-md";
 
   return (
-    <header className="px-2 pt-2 md:px-6 md:pt-6">
+    <header className="px-2 pt-2 md:px-6 md:pt-6 ">
       <div
-        className={`w-full ${headerRounded} bg-primary p-4 md:px-10 xl:px-16 xl:py-6`}
+        className={`mx-auto max-w-[2000px] ${headerRounded} bg-primary p-4 md:px-10 xl:px-16 xl:py-6`}
       >
         <div className="mx-auto flex flex-row justify-between xl:max-w-screen-xl">
           <Link href="/" className="flex flex-row items-center gap-x-2">

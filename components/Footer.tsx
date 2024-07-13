@@ -7,7 +7,7 @@ import WaitList from "./WaitList";
 const Footer = () => {
   return (
     <footer className="sticky bottom-0 w-full px-2 pb-4 md:px-6 md:pb-6">
-      <div className=" w-full rounded-lg bg-primary p-6 text-secondary-foreground md:pt-8 lg:pt-12 xl:px-16 ">
+      <div className=" mx-auto max-w-[2000px] rounded-lg bg-primary p-6 text-secondary-foreground md:pt-8 lg:pt-12 xl:px-16 ">
         <div className="relative mx-auto flex flex-col xl:max-w-screen-xl">
           <div className="flex flex-row justify-center">
             <div className="flex flex-col items-center gap-y-2 xl:gap-y-4">
