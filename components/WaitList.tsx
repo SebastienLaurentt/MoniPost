@@ -147,6 +147,7 @@ export default function WaitList() {
               style={{
                 color: showError ? "rgb(185, 28, 28)" : "",
               }}
+              aria-label="Enter Your Email address"
             />
             <SignUpFormButton />
           </form>
@@ -157,7 +158,7 @@ export default function WaitList() {
 
   function SignUpFormButton({ props }: any) {
     return (
-      <Button type="submit" variant="primary">
+      <Button type="submit" variant="primary" aria-label="Submit to WaitList">
         {formState === SUBMITTING ? "Please wait..." : formStyles.buttonText}
       </Button>
     );
