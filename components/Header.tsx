@@ -32,22 +32,35 @@ const Header = () => {
                 <Link
                   href="/#background-section"
                   aria-label="Background section link"
+                  className="lg:hover:underline lg:hover:underline-offset-2"
                 >
                   Background
                 </Link>
               </li>
               <li>
-                <Link href="/#models-section" aria-label="Models section link">
+                <Link
+                  href="/#models-section"
+                  aria-label="Models section link"
+                  className="lg:hover:underline lg:hover:underline-offset-2"
+                >
                   Solutions
                 </Link>
               </li>
               <li>
-                <Link href="/#prices-section" aria-label="Prices section link">
+                <Link
+                  href="/#prices-section"
+                  aria-label="Prices section link"
+                  className="lg:hover:underline lg:hover:underline-offset-2"
+                >
                   Prices
                 </Link>
               </li>
               <li>
-                <Link href="/#team-section" aria-label="Team section link">
+                <Link
+                  href="/#team-section"
+                  aria-label="Team section link"
+                  className="lg:hover:underline lg:hover:underline-offset-2"
+                >
                   Team
                 </Link>
               </li>
