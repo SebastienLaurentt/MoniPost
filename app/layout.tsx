@@ -1,4 +1,3 @@
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import VideoModal from "@/components/VideoModal";
 import { incosolata } from "@/lib/font";
@@ -44,11 +43,10 @@ export default function RootLayout({
       </head>
       <body className={`${incosolata} flex flex-col `}>
         <Header />
-        <div className="z-10">
-          <VideoModal />
+        <div>
+          
           {children}
         </div>
-        <Footer />
       </body>
     </html>
   );
