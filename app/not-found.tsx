@@ -30,7 +30,7 @@ export default function NotFound() {
           className="size-[300px] md:size-[400px] lg:size-[600px] xl:size-[400px]"
         ></Player>
         <Button asChild variant="primary">
-          <Link href="/">Accueil</Link>
+          <Link href="/">Go back </Link>
         </Button>
       </Section>
     </main>
